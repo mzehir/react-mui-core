@@ -17,6 +17,7 @@ import DashboadPage from "../pages/DashboardPage";
 import AccountAndSettings from "../pages/accountAndSettings/AccountAndSettings";
 
 import ButtonsPage from "../pages/components/ButtonsPage";
+import AlertsPage from "../pages/components/AlertsPage";
 import TextEditorPage from "../pages/components/TextEditorPage";
 
 const PagesRouter = () => {
@@ -106,6 +107,15 @@ const ComponentsRouter = () => {
         element={
           <DefaultLayout>
             <ButtonsPage />
+          </DefaultLayout>
+        }
+      />
+
+      <Route
+        path={ROUTER.ALERTS.path}
+        element={
+          <DefaultLayout>
+            <AlertsPage />
           </DefaultLayout>
         }
       />

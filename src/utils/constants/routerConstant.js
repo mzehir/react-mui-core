@@ -89,6 +89,15 @@ const COMPONENTS_ROUTER = {
     wrapperKey: "COMPONENTS",
   },
 
+  ALERTS: {
+    path: "/alerts",
+    label: "routerPageText.sidebarAlerts",
+    icon: null,
+    sidebarVisible: true,
+    isWrapper: true,
+    wrapperKey: "COMPONENTS",
+  },
+
   TEXT_EDITOR: {
     path: "/text-editor",
     label: "routerPageText.sidebarTextEditor",

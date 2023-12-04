@@ -11,6 +11,17 @@ export const SuccessAlert = (props) => {
   );
 };
 
+export const InfoAlert = (props) => {
+  return (
+    <>
+      <AlertComp variant="filled" severity="info">
+        <AlertTitleComp>componentsText.success</AlertTitleComp>
+        {props.text ? props.text : "Alert Info Text"}
+      </AlertComp>
+    </>
+  );
+};
+
 export const WarningAlert = (props) => {
   return (
     <>
