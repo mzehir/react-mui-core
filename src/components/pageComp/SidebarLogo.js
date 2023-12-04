@@ -1,22 +1,18 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-import LogoPNG from "../../assets/logo.png";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
 
-const CustomImg = styled.img`
+const BrandIcon = styled(Logo)`
+  margin-right: ${(props) => props.theme.spacing(2)};
+  color: ${(props) => props.theme.sidebar.header.brand.color};
+  fill: ${(props) => props.theme.sidebar.header.brand.color};
   width: 32px;
   height: 32px;
 `;
 
 function SidebarLogo() {
-  return (
-    <CustomImg
-      src={`${LogoPNG}?w=164&h=164&fit=crop&auto=format`}
-      srcSet={`${LogoPNG}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-      alt={"logo"}
-      loading="lazy"
-    />
-  );
+  return <BrandIcon />;
 }
 
 export default SidebarLogo;

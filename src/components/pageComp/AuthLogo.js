@@ -1,23 +1,17 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-import LogoPNG from "../../assets/logo.png";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
 
-const CustomImg = styled.img`
-  width: 96px;
-  height: 96px;
+const Brand = styled(Logo)`
+  fill: ${(props) => props.theme.palette.primary.main};
+  width: 64px;
+  height: 64px;
   margin-bottom: 32px;
 `;
 
 function AuthLogo() {
-  return (
-    <CustomImg
-      src={`${LogoPNG}?w=164&h=164&fit=crop&auto=format`}
-      srcSet={`${LogoPNG}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-      alt={"logo"}
-      loading="lazy"
-    />
-  );
+  return <Brand />;
 }
 
 export default AuthLogo;
