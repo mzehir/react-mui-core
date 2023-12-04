@@ -39,7 +39,13 @@
     "sidebarButtons": "Buttons",
     "sidebarTextEditor": "Text Editor",
     "buttonsPageTitle": "Custom Buttons",
-    "textEditorPageTitle": "Custom Text Editor"
+    "textEditorPageTitle": "Custom Text Editor",
+    "sidebarAuth": "Auth Pages",
+    "sidebarSignUp": "Sign Up",
+    "sidebarSignIn": "Sign In",
+    "sidebarVerifySignIn": "Verify Sign In",
+    "sidebarResetPassword": "Reset Password",
+    "sidebarForgotPassword": "Forgot Password"
   },
 
   "sectionAuthText": {

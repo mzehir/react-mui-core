@@ -1,4 +1,5 @@
 import LineAxisIcon from "@mui/icons-material/LineAxis";
+import PeopleIcon from "@mui/icons-material/People";
 import { Grid } from "react-feather";
 
 const WRAPPER = {
@@ -6,6 +7,12 @@ const WRAPPER = {
     label: "routerPageText.sidebarCustomComponents",
     key: "COMPONENTS",
     icon: Grid,
+  },
+
+  AUTH: {
+    label: "routerPageText.sidebarAuth",
+    key: "AUTH",
+    icon: PeopleIcon,
   },
 };
 
@@ -28,37 +35,47 @@ const PAGES_ROUTER = {
 const AUTH_ROUTER = {
   SIGN_UP: {
     path: "/sign-up",
-    label: "Sign Up",
+    label: "routerPageText.sidebarSignUp",
     icon: null,
-    sidebarVisible: false,
+    sidebarVisible: true,
+    isWrapper: true,
+    wrapperKey: "AUTH",
   },
 
   SIGN_IN: {
     path: "/sign-in",
-    label: "Sign In",
+    label: "routerPageText.sidebarSignIn",
     icon: null,
-    sidebarVisible: false,
+    sidebarVisible: true,
+    isWrapper: true,
+    wrapperKey: "AUTH",
   },
 
   VERIFY_SIGN_IN: {
     path: "/verify-sign-in",
-    label: "Verify Sign In",
+    label: "routerPageText.sidebarVerifySignIn",
     icon: null,
-    sidebarVisible: false,
+    sidebarVisible: true,
+    isWrapper: true,
+    wrapperKey: "AUTH",
   },
 
   RESET_PASSWORD: {
     path: "/reset-password",
-    label: "Reset Password",
+    label: "routerPageText.sidebarResetPassword",
     icon: null,
-    sidebarVisible: false,
+    sidebarVisible: true,
+    isWrapper: true,
+    wrapperKey: "AUTH",
   },
 
   FORGOT_PASSWORD: {
     path: "/forgot-password",
-    label: "Fogot Password",
+    label: "routerPageText.sidebarForgotPassword",
     icon: null,
-    sidebarVisible: false,
+    sidebarVisible: true,
+    isWrapper: true,
+    wrapperKey: "AUTH",
   },
 };
 

@@ -39,7 +39,13 @@
     "sidebarButtons": "Düğmeler",
     "sidebarTextEditor": "Metin Düzenleyici",
     "buttonsPageTitle": "Özel Düğmeler",
-    "textEditorPageTitle": "Özel Metin Düzenleyici"
+    "textEditorPageTitle": "Özel Metin Düzenleyici",
+    "sidebarAuth": "Yetkilendirme Sayfaları",
+    "sidebarSignUp": "Kayıt Ol",
+    "sidebarSignIn": "Oturum Aç",
+    "sidebarVerifySignIn": "Oturum Açmayı Doğrula",
+    "sidebarResetPassword": "Parola Sıfırla",
+    "sidebarForgotPassword": "Parolamı Unuttum"
   },
 
   "sectionAuthText": {
