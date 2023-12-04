@@ -1,0 +1,97 @@
+{
+  "common": {},
+
+  "componentsText": {
+    "success": "Başarılı",
+    "warning": "Uyarı",
+    "error": "Hata",
+    "send": "Gönder",
+    "update": "Güncelle",
+    "save": "Kaydet",
+    "delete": "Sil",
+    "cancel": "İptal Et",
+    "signIn": "Giriş yap",
+    "signUp": "Kayıt ol",
+    "verify": "Doğrula",
+    "uploadPhoto": "Fotoğraf Yükle",
+    "ok": "TAMAM",
+    "disclosure": "Açıklama!",
+    "detailedPositionSelector": "Detaylı Konum Seçici",
+    "account": "Hesap",
+    "myAccount": "Benim hesabım",
+    "signOut": "Oturumu kapat",
+    "theme": "Tema",
+    "language": "Dil",
+    "themeSettingsTitle": "Lütfen bir tema seç",
+    "dark": "Karanlık",
+    "default": "Varsayılan",
+    "languageSettingsTitle": "Lütfen bir dil seç",
+    "english": "İngilizce",
+    "turkish": "Türkçe",
+    "support": "Destek",
+    "helpCenter": "Yardım Merkezi",
+    "guest": "Misafir"
+  },
+
+  "routerPageText": {
+    "sidebarDashboard": "Gösterge Paneli",
+    "sidebarCustomComponents": "Özel Bileşenler",
+    "sidebarButtons": "Düğmeler",
+    "sidebarTextEditor": "Metin Düzenleyici",
+    "buttonsPageTitle": "Özel Düğmeler",
+    "textEditorPageTitle": "Özel Metin Düzenleyici"
+  },
+
+  "sectionAuthText": {
+    "welcomeTo": "Hoş geldiniz",
+    "signUpDesc": "Devam etmek için kayıt olun",
+    "signInDesc": "Devam etmek için hesabınızda oturum açın",
+    "resetPasswordDesc": "Devam etmek için yeni bir parola oluşturun",
+    "forgotPasswordDesc": "Devam etmek için öncelikle gerekli alana e-posta adresinizi girin ve gönder düğmesine tıklayın. Daha sonra e-postanıza gelen linki açarak yeni bir şifre oluşturun.",
+    "iWantToBeAMember": "Üye olmak istiyorum",
+    "iWantToSignIn": "Giriş yapmak istiyorum",
+    "iforgotMyPassword": "Parolamı unuttum "
+  },
+
+  "belongingToTheProject": {
+    "userCard": "Kullanıcı Kartı",
+    "emailAddress": "E-posta Adresi",
+    "password": "Şifre",
+    "rememberMe": "Beni Hatırla",
+    "name": "Ad",
+    "surname": "Soyad",
+    "confirmPassword": "Şifreyi Onayla",
+    "phoneNumber": "Telefon Numarası",
+    "verificationCode": "Doğrulama Kodu",
+    "lastStepToSignIn": "Oturum açmak için son adım",
+    "enterTheVerificationCodeSentToYourEmailOrPhone": "E-postanıza veya telefonunuza gönderilen doğrulama kodunu girin",
+    "birthDate": "Doğum tarihi",
+    "personalInformation": "Kişisel Bilgiler",
+    "criticalInformation": "Kritik Bilgiler",
+    "cardPaymentInformation": "Kart & Ödeme Bilgileri",
+    "notificationSettings": "Bildirim Ayarları"
+  },
+
+  "validationTexts": {
+    "requiredEmail": "E-posta adresi gereklidir.",
+    "notValidEmail": "E-posta adresi uygun değil.",
+    "minPassword": "Şifre en az {{number}} karakter olmalıdır.",
+    "maxPassword": "Şifre en fazla {{number}} karakter olmalıdır.",
+    "requiredPassword": "Şifre alanı gereklidir.",
+    "notValidPassword": "Şifre uygun değil.",
+    "requiredName": "Ad gereklidir.",
+    "requiredSurname": "Soyad gereklidir.",
+    "minName": "Ad en az {{number}} karakter olmalıdır.",
+    "maxName": "Ad en fazla {{number}} karakter olmalıdır.",
+    "minSurname": "Soyad en az {{number}} karakter olmalıdır.",
+    "maxSurname": "Soyad en fazla {{number}} karakter olmalıdır.",
+    "requiredPhoneNumber": "Telefon numarası gereklidir.",
+    "requiredConfirmPassword": "Şifreyi onayla alanı gereklidir.",
+    "passwordsDoNotMatch": "Şifreler eşleşmiyor.",
+    "notValidPhoneNumber": "Telefon numaası uygun değil.",
+    "requiredVerificationCode": "Telefon numarası gereklidir.",
+    "nonZeroFirstDigitPhone": "Telefon numarası 0 ile başlayamaz.",
+    "onlyNumbersPhone": "Numara sadece rakamlardan oluşmalı.",
+    "numberOfDigitsInTheNumberPhone": "Telefon numarası {{number}} rakamdan oluşmalı."
+  }
+}

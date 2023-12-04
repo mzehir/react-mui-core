@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "react-app",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "react-hooks/exhaustive-deps": "off", // react-hooks/exhaustive-deps kuralını devre dışı bırakın
+    "eqeqeq": "off" // 'eqeqeq' kuralını devre dışı bırakın
+  }
+}

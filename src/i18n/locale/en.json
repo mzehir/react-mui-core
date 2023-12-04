@@ -1,0 +1,97 @@
+{
+  "common": {},
+
+  "componentsText": {
+    "success": "Success",
+    "warning": "Warning",
+    "error": "Error",
+    "send": "Send",
+    "update": "Update",
+    "save": "Save",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "verify": "Verify",
+    "uploadPhoto": "Upload Photo",
+    "ok": "OK",
+    "disclosure": "Disclosure!",
+    "detailedPositionSelector": "Detailed Position Selector",
+    "account": "Account",
+    "myAccount": "My account",
+    "signOut": "Sign out",
+    "theme": "Theme",
+    "language": "Language",
+    "themeSettingsTitle": "Please choose a theme",
+    "dark": "Dark",
+    "default": "Default",
+    "languageSettingsTitle": "Please choose a language",
+    "english": "English",
+    "turkish": "Turkish",
+    "support": "Support",
+    "helpCenter": "Help Center",
+    "guest": "Guest"
+  },
+
+  "routerPageText": {
+    "sidebarDashboard": "Dashboard",
+    "sidebarCustomComponents": "Custom Components",
+    "sidebarButtons": "Buttons",
+    "sidebarTextEditor": "Text Editor",
+    "buttonsPageTitle": "Custom Buttons",
+    "textEditorPageTitle": "Custom Text Editor"
+  },
+
+  "sectionAuthText": {
+    "welcomeTo": "Welcome to",
+    "signUpDesc": "Sign up to continue",
+    "signInDesc": "Sign in to your account to continue",
+    "resetPasswordDesc": "Create a new password to continue",
+    "forgotPasswordDesc": "To continue, first enter your email address in the required field and click submit. Then open the link to your email and create a new password.",
+    "iWantToBeAMember": "I want to be a member",
+    "iWantToSignIn": "I want to sign in",
+    "iforgotMyPassword": "I forgot my password"
+  },
+
+  "belongingToTheProject": {
+    "userCard": "User Card",
+    "emailAddress": "Email Address",
+    "password": "Password",
+    "rememberMe": "Remember Me",
+    "name": "Name",
+    "surname": "Surname",
+    "confirmPassword": "ConfirmPassword",
+    "phoneNumber": "Phone Number",
+    "verificationCode": "Verification Code",
+    "lastStepToSignIn": "Last step to sign in",
+    "enterTheVerificationCodeSentToYourEmailOrPhone": "Enter the verification code sent to your email or phone",
+    "birthDate": "Date of birth",
+    "personalInformation": "Personal Information",
+    "criticalInformation": "Critical Information",
+    "cardPaymentInformation": "Card & Payment Information",
+    "notificationSettings": "Notification Settings"
+  },
+
+  "validationTexts": {
+    "requiredEmail": "The email address is required.",
+    "notValidEmail": "The email address is not valid.",
+    "minPassword": "The password must be at least {{number}} characters long.",
+    "maxPassword": "The password must be at most {{number}} characters long.",
+    "requiredPassword": "The password field is required.",
+    "notValidPassword": "The password is not valid.",
+    "requiredName": "The name is required.",
+    "requiredSurname": "The surname is required.",
+    "minName": "The name must be at least {{number}} characters long.",
+    "maxName": "The name must be at most {{number}} characters long.",
+    "minSurname": "The surname must be at least {{number}} characters long.",
+    "maxSurname": "The surname must be at most {{number}} characters long.",
+    "requiredPhoneNumber": "The phone number is required.",
+    "requiredConfirmPassword": "Password confirmation field is required.",
+    "passwordsDoNotMatch": "Passwords do not match.",
+    "notValidPhoneNumber": "The phone number is not valid.",
+    "requiredVerificationCode": "The Verification code is required.",
+    "nonZeroFirstDigitPhone": "The phone number cannot start with 0.",
+    "onlyNumbersPhone": "The number should only consist of numbers.",
+    "numberOfDigitsInTheNumberPhone": "Phone number should consist of {{number}} digits"
+  }
+}
