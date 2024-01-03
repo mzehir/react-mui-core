@@ -4,9 +4,12 @@ import styled from "styled-components/macro";
 import GridComp from "../Grid";
 import ListItemButtonComp from "../ListItemButton";
 import ListItemTextComp from "../ListItemText";
-import { APP_NAME } from "../../utils/config/config";
+// import { APP_NAME } from "../../utils/config/config";
 
 import { List } from "@mui/material";
+
+import { useSelector } from "react-redux";
+import { generalAppConfigs } from "../../redux/actions/generalAppConfigAction";
 
 const Wrapper = styled.div`
   padding: ${(props) => props.theme.spacing(0.25)}
@@ -35,6 +38,8 @@ const ListItemText = styled(ListItemTextComp)`
 `;
 
 function Footer() {
+  const appConfigs = useSelector(generalAppConfigs);
+
   return (
     <Wrapper>
       <GridComp container spacing={0}>
@@ -58,7 +63,9 @@ function Footer() {
           <List>
             <ListItemButton>
               <ListItemText
-                primary={`© ${new Date().getFullYear()} - ${APP_NAME} `}
+                primary={`© ${new Date().getFullYear()} - ${
+                  appConfigs.appName
+                } `}
               />
             </ListItemButton>
           </List>

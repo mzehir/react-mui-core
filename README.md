@@ -51,6 +51,15 @@ src/
 |  |  ├─ ...
 ├─ pages/
 |  ├─ ...
+├─ redux/
+│  ├─ actions/
+|  |  ├─ generalAppConfigAction.js
+│  ├─ reducers/
+|  |  ├─ generalAppConfigReducer.js
+│  ├─ slices/
+|  |  ├─ generalAppConfigSlice.js
+│  ├─ store/
+|  |  ├─ store.js
 ├─ router/
 │  ├─ Router.js
 ├─ service/
@@ -134,6 +143,10 @@ Packages used `dependencies`
 
 <!-- - **[@react-google-maps/api](https://www.npmjs.com/package/@react-google-maps/api):** Google Haritalar API'sini React projelerinde kullanmak için bir kütüphane. -->
 
+- **[@reduxjs/toolkit@1.9.7](https://www.npmjs.com/package/@reduxjs/toolkit/v/1.9.7?activeTab=versions):** ...
+
+<!-- - **[@reduxjs/toolkit@1.9.7](https://www.npmjs.com/package/@reduxjs/toolkit/v/1.9.7?activeTab=versions):** ... -->
+
 - **[@tinymce/tinymce-react](https://www.npmjs.com/package/@tinymce/tinymce-react):** Component for using the TinyMCE text editor in React projects.
 
 <!-- - **[@tinymce/tinymce-react](https://www.npmjs.com/package/@tinymce/tinymce-react):** TinyMCE metin düzenleyicisini React projelerinde kullanmak için bir bileşen. -->
@@ -209,6 +222,10 @@ Packages used `dependencies`
 - **[react-perfect-scrollbar](https://www.npmjs.com/package/react-perfect-scrollbar):** Library for using the Perfect Scrollbar in React projects.
 
 <!-- - **[react-perfect-scrollbar](https://www.npmjs.com/package/react-perfect-scrollbar):** Mükemmel kaydırma çubuğunu React projelerinde kullanmak için bir kütüphane. -->
+
+- **[react-redux@8.1.3](https://www.npmjs.com/package/react-redux/v/8.1.3):** ...
+
+<!-- - **[react-redux@8.1.3](https://www.npmjs.com/package/react-redux/v/8.1.3):** ... -->
 
 - **[react-router-dom](https://www.npmjs.com/package/react-router-dom):** React uygulamalarında sayfa navigasyonu için kütüphane.
 
