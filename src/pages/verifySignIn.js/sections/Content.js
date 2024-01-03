@@ -23,7 +23,9 @@ function Content() {
     resolver: yupResolver(VERIFY_SIGN_IN_SCHEMA),
     defaultValues: {
       ...VERIFY_SIGN_IN_FORM_INITIAL_VALUES,
-      token: location.state[STATE_KEY.VERIFICATION_TOKEN.key],
+      token: location.state
+        ? location.state[STATE_KEY.VERIFICATION_TOKEN.key]
+        : "",
     },
   });
 
