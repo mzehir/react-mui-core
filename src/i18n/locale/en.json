@@ -30,7 +30,13 @@
     "turkish": "Turkish",
     "support": "Support",
     "helpCenter": "Help Center",
-    "guest": "Guest"
+    "guest": "Guest",
+    "exampleReduxUsageTitleText": "A simple example for using React Redux / Redux Toolkit",
+    "exampleToastUsageTitleText": "A simple example for using React-Toastify",
+    "appNewName": "Enter new name in the app",
+    "toastType": "Select toast type",
+    "toastPosition": "Select toast position",
+    "toastText": "Enter Toast text"
   },
 
   "routerPageText": {

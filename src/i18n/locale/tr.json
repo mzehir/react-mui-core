@@ -30,7 +30,13 @@
     "turkish": "Türkçe",
     "support": "Destek",
     "helpCenter": "Yardım Merkezi",
-    "guest": "Misafir"
+    "guest": "Misafir",
+    "exampleReduxUsageTitleText": "React Redux / Redux Toolkit kullanımı için basit bir örnek",
+    "exampleToastUsageTitleText": "React-Toastify kullanımı için basit bir örnek",
+    "appNewName": "Uygulamaya yeni isim gir",
+    "toastType": "Toast tipi seç",
+    "toastPosition": "Toast Pozisyonu seç",
+    "toastText": "Toast metni gir"
   },
 
   "routerPageText": {
