@@ -36,7 +36,9 @@
     "appNewName": "Enter new name in the app",
     "toastType": "Select toast type",
     "toastPosition": "Select toast position",
-    "toastText": "Enter Toast text"
+    "toastTheme": "Select toast theme",
+    "toastText": "Enter Toast text",
+    "reactToastifyActivePassive": "Make React-Toastify active / passive"
   },
 
   "routerPageText": {

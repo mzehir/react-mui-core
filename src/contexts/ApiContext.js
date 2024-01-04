@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from "react";
 import axios from "../service/axios";
-import { Toastify } from "../components/toastify";
+import { Toastify } from "../components/toastify/toastify";
 import { API_ERROR_CONSTANT } from "../utils/constants/appConstants/apiErrorConstant";
 import {
   apiPathReturn,

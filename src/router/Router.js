@@ -13,7 +13,7 @@ import VerifySignInPage from "../pages/verifySignIn.js/VerifySignInPage";
 import ResetPasswordPage from "../pages/resetPassword/ResetPasswordPage";
 import ForgotPasswodPage from "../pages/forgotPassword/ForgotPasswodPage";
 
-import DashboadPage from "../pages/DashboardPage";
+import DashboadPage from "../pages/dashboard/DashboardPage";
 import AccountAndSettings from "../pages/accountAndSettings/AccountAndSettings";
 
 import ButtonsPage from "../pages/components/ButtonsPage";

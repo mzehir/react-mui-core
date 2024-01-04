@@ -35,8 +35,10 @@
     "exampleToastUsageTitleText": "React-Toastify kullanımı için basit bir örnek",
     "appNewName": "Uygulamaya yeni isim gir",
     "toastType": "Toast tipi seç",
-    "toastPosition": "Toast Pozisyonu seç",
-    "toastText": "Toast metni gir"
+    "toastPosition": "Toast pozisyonu seç",
+    "toastTheme": "Toast teması seç",
+    "toastText": "Toast metni gir",
+    "reactToastifyActivePassive": "React-Toastify'ı aktif/pasif yap"
   },
 
   "routerPageText": {
