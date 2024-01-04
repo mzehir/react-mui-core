@@ -21,8 +21,9 @@ const UserOtherInformationsSection = () => {
 
   return (
     <BoxComp sx={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-      {userInformationsItems.map((item) => (
+      {userInformationsItems.map((item, index) => (
         <BoxComp
+          key={index.toString()}
           sx={{
             display: "flex",
             flexDirection: "row",
