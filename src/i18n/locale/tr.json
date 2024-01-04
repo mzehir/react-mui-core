@@ -14,6 +14,8 @@
     "signUp": "Kayıt ol",
     "verify": "Doğrula",
     "uploadPhoto": "Fotoğraf Yükle",
+    "filter": "Filtrele",
+    "clearTheFilters": "Filtreleri temizle",
     "ok": "TAMAM",
     "disclosure": "Açıklama!",
     "detailedPositionSelector": "Detaylı Konum Seçici",
@@ -33,12 +35,14 @@
     "guest": "Misafir",
     "exampleReduxUsageTitleText": "React Redux / Redux Toolkit kullanımı için basit bir örnek",
     "exampleToastUsageTitleText": "React-Toastify kullanımı için basit bir örnek",
+    "exampleCustomFilterCompUsageTitleText": "Özel Filtre Bileşen kullanımı için basit bir örnek",
     "appNewName": "Uygulamaya yeni isim gir",
     "toastType": "Toast tipi seç",
     "toastPosition": "Toast pozisyonu seç",
     "toastTheme": "Toast teması seç",
     "toastText": "Toast metni gir",
-    "reactToastifyActivePassive": "React-Toastify'ı aktif/pasif yap"
+    "reactToastifyActivePassive": "React-Toastify'ı aktif/pasif yap",
+    "noFilterSelected": "Herhangi bir filtre seçilmedi"
   },
 
   "routerPageText": {

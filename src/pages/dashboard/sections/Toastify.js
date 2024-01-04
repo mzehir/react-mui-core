@@ -98,7 +98,7 @@ const ExampleToastUsage = () => {
               labelIsTranslation={true}
               value={text}
               onChange={(e) => setText(e.target.value)}
-            ></TextFieldComp>
+            />
           </GridComp>
         </GridComp>
       </CardContentComp>

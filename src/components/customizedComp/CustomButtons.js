@@ -12,6 +12,8 @@ import CancelIcon from "@mui/icons-material/Cancel";
 import LoginIcon from "@mui/icons-material/Login";
 import HowToRegIcon from "@mui/icons-material/HowToReg";
 import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
+import FilterListIcon from "@mui/icons-material/FilterList";
+import ClearIcon from "@mui/icons-material/Clear";
 
 export const SendButton = (props) => {
   const { children, ...other } = props;
@@ -135,6 +137,36 @@ export const UploadPhotoButton = (props) => {
     >
       componentsText.uploadPhoto
       <VisuallyHiddenInputComp accept="image/*" onChange={onChange} />
+    </ButtonComp>
+  );
+};
+
+export const FilterButton = (props) => {
+  const { children, ...other } = props;
+
+  return (
+    <ButtonComp
+      variant="contained"
+      color="success"
+      endIcon={<FilterListIcon />}
+      {...other}
+    >
+      componentsText.filter
+    </ButtonComp>
+  );
+};
+
+export const CleanTheFiltersButton = (props) => {
+  const { children, ...other } = props;
+
+  return (
+    <ButtonComp
+      variant="contained"
+      color="error"
+      endIcon={<ClearIcon />}
+      {...other}
+    >
+      componentsText.clearTheFilters
     </ButtonComp>
   );
 };

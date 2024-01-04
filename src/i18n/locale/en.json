@@ -14,6 +14,8 @@
     "signUp": "Sign up",
     "verify": "Verify",
     "uploadPhoto": "Upload Photo",
+    "filter": "Filter",
+    "clearTheFilters": "Clear the filters",
     "ok": "OK",
     "disclosure": "Disclosure!",
     "detailedPositionSelector": "Detailed Position Selector",
@@ -33,12 +35,14 @@
     "guest": "Guest",
     "exampleReduxUsageTitleText": "A simple example for using React Redux / Redux Toolkit",
     "exampleToastUsageTitleText": "A simple example for using React-Toastify",
+    "exampleCustomFilterCompUsageTitleText": "A simple example for using Custom Filter Component",
     "appNewName": "Enter new name in the app",
     "toastType": "Select toast type",
     "toastPosition": "Select toast position",
     "toastTheme": "Select toast theme",
     "toastText": "Enter Toast text",
-    "reactToastifyActivePassive": "Make React-Toastify active / passive"
+    "reactToastifyActivePassive": "Make React-Toastify active / passive",
+    "noFilterSelected": "No filter selected"
   },
 
   "routerPageText": {
