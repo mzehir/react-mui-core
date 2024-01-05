@@ -13,7 +13,7 @@ const DetailSection = ({
 }) => {
   return (
     <AccordionDetailsComp>
-      <GridComp container spacing={2} alignItems={"center"}>
+      <GridComp container spacing={5} alignItems={"center"}>
         {filterItems.map((item, index) => {
           return (
             <React.Fragment key={index.toString()}>
@@ -33,7 +33,7 @@ const DetailSection = ({
                         filterGroupKey: item.filterGroupKey,
                         filterGroupLabel: item.filterGroupLabel,
                         value: e.target.checked,
-                        label: "open",
+                        label: "Open",
                       };
 
                       changeForFilterElements(resultData);
