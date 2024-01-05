@@ -140,6 +140,15 @@ const COMPONENTS_ROUTER = {
     wrapperKey: "CORE_COMPONENTS",
   },
 
+  TEXT_FIELD_CORE: {
+    path: "/core/text-field",
+    label: "routerPageText.sidebarTextField",
+    icon: null,
+    sidebarVisible: true,
+    isWrapper: true,
+    wrapperKey: "CORE_COMPONENTS",
+  },
+
   SNACKBAR_CORE: {
     path: "/core/snackbar",
     label: "routerPageText.sidebarSnackbar",

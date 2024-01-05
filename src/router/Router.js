@@ -20,9 +20,10 @@ import ButtonsPage from "../pages/components/custom/ButtonsPage";
 import AlertsPage from "../pages/components/custom/AlertsPage";
 import TextEditorPage from "../pages/components/custom/TextEditorPage";
 
+import TypographyPageCore from "../pages/components/core/TypographyPage";
+import TextFieldPageCore from "../pages/components/core/TextFieldPage";
 import ButtonPageCore from "../pages/components/core/ButtonPage";
 import AlertPageCore from "../pages/components/core/AlertPage";
-import TypographyPageCore from "../pages/components/core/TypographyPage";
 import SnackbarPageCore from "../pages/components/core/SnackbarPage";
 
 const PagesRouter = () => {
@@ -157,6 +158,15 @@ const ComponentsRouter = () => {
         element={
           <DefaultLayout>
             <TypographyPageCore />
+          </DefaultLayout>
+        }
+      />
+
+      <Route
+        path={ROUTER.TEXT_FIELD_CORE.path}
+        element={
+          <DefaultLayout>
+            <TextFieldPageCore />
           </DefaultLayout>
         }
       />

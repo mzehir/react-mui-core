@@ -63,7 +63,15 @@
     "enterTitleTextForTheTypography": "Enter title text for typography",
     "noWrap": "No wrap",
     "snackbarOpen": "Snackbar open",
-    "enterTextForTheSnackbar": "Enter text for the button snackbar"
+    "enterTextForTheSnackbar": "Enter text for the button snackbar",
+    "enterText": "Metin gir",
+    "disable": "Disable",
+    "disableOpen": "Disable open",
+    "errorOpen": "Error open",
+    "maxWidthOpen": "Maximum width open",
+    "requiredFeatureOpen": "Required feature open",
+    "readOnlyFeatureOn": "Read only feature on",
+    "passwordWriteAreaActive":"Password write area active"
   },
 
   "routerPageText": {
@@ -76,6 +84,7 @@
     "sidebarAlert": "Alert",
     "sidebarTypography": "Typography",
     "sidebarSnackbar": "Snackbar",
+    "sidebarTextField": "Text Field",
     "sidebarTextEditor": "Text Editor",
     "buttonsPageTitle": "Custom Buttons",
     "alertsPageTitle": "Custom Alerts",
@@ -89,7 +98,8 @@
     "coreButtonPageTitle": "Button",
     "coreSnackbarPageTitle": "Snackbar",
     "coreAlertPageTitle": "Alert",
-    "coreTypographyPageTitle": "Typography"
+    "coreTypographyPageTitle": "Typography",
+    "coreTextFieldPageTitle": "TextField"
   },
 
   "sectionAuthText": {

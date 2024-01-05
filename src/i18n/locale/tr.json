@@ -63,7 +63,15 @@
     "enterTitleTextForTheTypography": "Tipografi için başlık metni gir",
     "noWrap": "Sargı yok",
     "snackbarOpen": "Snackbar açık",
-    "enterTextForTheSnackbar": "Snackbar için metin gir"
+    "enterTextForTheSnackbar": "Snackbar için metin gir",
+    "enterText": "Metin gir",
+    "disable": "Devre dışı bırak",
+    "disableOpen": "Devre dışı bırak açık",
+    "errorOpen": "Hata açık",
+    "maxWidthOpen": "Maximum genişlik açık",
+    "requiredFeatureOpen": "Gereklidir özelliğini açık",
+    "readOnlyFeatureOn": "Yalnızca okunur özelliği açık",
+    "passwordWriteAreaActive":"Parola yazma alanı etkin"
   },
 
   "routerPageText": {
@@ -76,6 +84,7 @@
     "sidebarAlert": "Uyarı",
     "sidebarTypography": "Tipografi",
     "sidebarSnackbar": "Snackbar",
+    "sidebarTextField": "Metin Alanı",
     "sidebarTextEditor": "Metin Düzenleyici",
     "buttonsPageTitle": "Özel Düğmeler",
     "alertsPageTitle": "Özel Uyarılar",
@@ -89,7 +98,9 @@
     "coreButtonPageTitle": "Düğme",
     "coreSnackbarPageTitle": "Snackbar",
     "coreAlertPageTitle": "Uyarı",
-    "coreTypographyPageTitle": "Tipografi"
+    "coreTypographyPageTitle": "Tipografi",
+    "coreTextFieldPageTitle": "Metin Alanı"
+
   },
 
   "sectionAuthText": {
