@@ -23,6 +23,7 @@ import TextEditorPage from "../pages/components/custom/TextEditorPage";
 import ButtonPageCore from "../pages/components/core/ButtonPage";
 import AlertPageCore from "../pages/components/core/AlertPage";
 import TypographyPageCore from "../pages/components/core/TypographyPage";
+import SnackbarPageCore from "../pages/components/core/SnackbarPage";
 
 const PagesRouter = () => {
   return (
@@ -156,6 +157,15 @@ const ComponentsRouter = () => {
         element={
           <DefaultLayout>
             <TypographyPageCore />
+          </DefaultLayout>
+        }
+      />
+
+      <Route
+        path={ROUTER.SNACKBAR_CORE.path}
+        element={
+          <DefaultLayout>
+            <SnackbarPageCore />
           </DefaultLayout>
         }
       />

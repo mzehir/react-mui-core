@@ -139,6 +139,15 @@ const COMPONENTS_ROUTER = {
     isWrapper: true,
     wrapperKey: "CORE_COMPONENTS",
   },
+
+  SNACKBAR_CORE: {
+    path: "/core/snackbar",
+    label: "routerPageText.sidebarSnackbar",
+    icon: null,
+    sidebarVisible: true,
+    isWrapper: true,
+    wrapperKey: "CORE_COMPONENTS",
+  },
 };
 
 export const ROUTER = {
