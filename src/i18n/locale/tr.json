@@ -48,6 +48,7 @@
     "selectASize": "Bir boyut seç",
     "selectAColor": "Bir renk seç",
     "selectASeverity": "Bir önem derecesi seç",
+    "selectAnAlignment": "Bir hizalama seç",
     "disableTheButton": "Düğmeyi devre dışı bırak",
     "addIconToButtonStart": "Düğme başlangıcına ikon ekle",
     "addIconToEndOfButton": "Düğme sonuna ikon ekle",
@@ -55,7 +56,9 @@
     "enterTitleTextForTheAlert": "Uyarı için başlık metni gir",
     "enterContentTextForTheAlert": "Uyarı için içerik metni gir",
     "showShutdownIcon": "Kapatma ikonunu göster",
-    "addCustomButton": "Özel düğme ekle"
+    "addCustomButton": "Özel düğme ekle",
+    "enterTitleTextForTheTypography": "Tipografi için başlık metni gir",
+    "noWrap": "Sargı yok"
   },
 
   "routerPageText": {
@@ -66,6 +69,7 @@
     "sidebarButton": "Düğme",
     "sidebarAlerts": "Uyarılar",
     "sidebarAlert": "Uyarı",
+    "sidebarTypography": "Tipografi",
     "sidebarTextEditor": "Metin Düzenleyici",
     "buttonsPageTitle": "Özel Düğmeler",
     "alertsPageTitle": "Özel Uyarılar",
@@ -77,7 +81,8 @@
     "sidebarResetPassword": "Parola Sıfırla",
     "sidebarForgotPassword": "Parolamı Unuttum",
     "coreButtonPageTitle": "Düğme",
-    "coreAlertPageTitle": "Uyarı"
+    "coreAlertPageTitle": "Uyarı",
+    "coreTypographyPageTitle": "Tipografi"
   },
 
   "sectionAuthText": {

@@ -130,6 +130,15 @@ const COMPONENTS_ROUTER = {
     isWrapper: true,
     wrapperKey: "CORE_COMPONENTS",
   },
+
+  TYPOGRAPHY_CORE: {
+    path: "/core/typography",
+    label: "routerPageText.sidebarTypography",
+    icon: null,
+    sidebarVisible: true,
+    isWrapper: true,
+    wrapperKey: "CORE_COMPONENTS",
+  },
 };
 
 export const ROUTER = {

@@ -22,6 +22,7 @@ import TextEditorPage from "../pages/components/custom/TextEditorPage";
 
 import ButtonPageCore from "../pages/components/core/ButtonPage";
 import AlertPageCore from "../pages/components/core/AlertPage";
+import TypographyPageCore from "../pages/components/core/TypographyPage";
 
 const PagesRouter = () => {
   return (
@@ -146,6 +147,15 @@ const ComponentsRouter = () => {
         element={
           <DefaultLayout>
             <AlertPageCore />
+          </DefaultLayout>
+        }
+      />
+
+      <Route
+        path={ROUTER.TYPOGRAPHY_CORE.path}
+        element={
+          <DefaultLayout>
+            <TypographyPageCore />
           </DefaultLayout>
         }
       />
