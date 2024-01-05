@@ -16,9 +16,11 @@ import ForgotPasswodPage from "../pages/forgotPassword/ForgotPasswodPage";
 import DashboadPage from "../pages/dashboard/DashboardPage";
 import AccountAndSettings from "../pages/accountAndSettings/AccountAndSettings";
 
-import ButtonsPage from "../pages/components/ButtonsPage";
-import AlertsPage from "../pages/components/AlertsPage";
-import TextEditorPage from "../pages/components/TextEditorPage";
+import ButtonsPage from "../pages/components/custom/ButtonsPage";
+import AlertsPage from "../pages/components/custom/AlertsPage";
+import TextEditorPage from "../pages/components/custom/TextEditorPage";
+
+import ButtonPageCore from "../pages/components/core/ButtonPage";
 
 const PagesRouter = () => {
   return (
@@ -103,7 +105,7 @@ const ComponentsRouter = () => {
   return (
     <React.Fragment>
       <Route
-        path={ROUTER.BUTTONS.path}
+        path={ROUTER.BUTTONS_CUSTOM.path}
         element={
           <DefaultLayout>
             <ButtonsPage />
@@ -112,7 +114,7 @@ const ComponentsRouter = () => {
       />
 
       <Route
-        path={ROUTER.ALERTS.path}
+        path={ROUTER.ALERTS_CUSTOM.path}
         element={
           <DefaultLayout>
             <AlertsPage />
@@ -121,10 +123,19 @@ const ComponentsRouter = () => {
       />
 
       <Route
-        path={ROUTER.TEXT_EDITOR.path}
+        path={ROUTER.TEXT_EDITOR_CUSTOM.path}
         element={
           <DefaultLayout>
             <TextEditorPage />
+          </DefaultLayout>
+        }
+      />
+
+      <Route
+        path={ROUTER.BUTTON_CORE.path}
+        element={
+          <DefaultLayout>
+            <ButtonPageCore />
           </DefaultLayout>
         }
       />

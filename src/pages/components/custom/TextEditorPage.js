@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-import TypographyComp from "../../components/Typography";
-import DividerComp from "../../components/Divider";
-import { CardComp, CardContentComp } from "../../components/Card";
-import TinymceComp from "../../components/tinymce/Tinymce";
+import TypographyComp from "../../../components/Typography";
+import DividerComp from "../../../components/Divider";
+import { CardComp, CardContentComp } from "../../../components/Card";
+import TinymceComp from "../../../components/tinymce/Tinymce";
 
 import { spacing } from "@mui/system";
 

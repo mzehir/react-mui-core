@@ -42,13 +42,23 @@
     "toastTheme": "Toast teması seç",
     "toastText": "Toast metni gir",
     "reactToastifyActivePassive": "React-Toastify'ı aktif/pasif yap",
-    "noFilterSelected": "Herhangi bir filtre seçilmedi"
+    "noFilterSelected": "Herhangi bir filtre seçilmedi",
+    "enterTextForTheButton": "Düğme için metin gir",
+    "selectAVariant": "Bir varyant seç",
+    "selectASize": "Bir boyut seç",
+    "selectAColor": "Bir renk seç",
+    "disableTheButton": "Düğmeyi devre dışı bırak",
+    "addIconToButtonStart": "Düğme başlangıcına ikon ekle",
+    "addIconToEndOfButton": "Düğme sonuna ikon ekle",
+    "buttonMaxWidth": "Düğmeye maksimum genişlik verin"
   },
 
   "routerPageText": {
     "sidebarDashboard": "Gösterge Paneli",
     "sidebarCustomComponents": "Özel Bileşenler",
+    "sidebarCoreComponents": "Temel Bileşenler",
     "sidebarButtons": "Düğmeler",
+    "sidebarButton": "Düğme",
     "sidebarAlerts": "Uyarılar",
     "sidebarTextEditor": "Metin Düzenleyici",
     "buttonsPageTitle": "Özel Düğmeler",
@@ -59,7 +69,8 @@
     "sidebarSignIn": "Oturum Aç",
     "sidebarVerifySignIn": "Oturum Açmayı Doğrula",
     "sidebarResetPassword": "Parola Sıfırla",
-    "sidebarForgotPassword": "Parolamı Unuttum"
+    "sidebarForgotPassword": "Parolamı Unuttum",
+    "coreButtonPageTitle": "Düğme"
   },
 
   "sectionAuthText": {

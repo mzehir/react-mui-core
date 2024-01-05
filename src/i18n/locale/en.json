@@ -42,13 +42,23 @@
     "toastTheme": "Select toast theme",
     "toastText": "Enter Toast text",
     "reactToastifyActivePassive": "Make React-Toastify active / passive",
-    "noFilterSelected": "No filter selected"
+    "noFilterSelected": "No filter selected",
+    "enterTextForTheButton": "Enter text for the button",
+    "selectAVariant": "Select a variant",
+    "selectASize": "Select a size",
+    "selectAColor": "Select a color",
+    "disableTheButton": "Disable the button",
+    "addIconToButtonStart": "Add icon to button start",
+    "addIconToEndOfButton": "Add icon to button start",
+    "buttonMaxWidth": "Give the button maximum width"
   },
 
   "routerPageText": {
     "sidebarDashboard": "Dashboard",
     "sidebarCustomComponents": "Custom Components",
+    "sidebarCoreComponents": "Core Components",
     "sidebarButtons": "Buttons",
+    "sidebarButton": "Button",
     "sidebarAlerts": "Alerts",
     "sidebarTextEditor": "Text Editor",
     "buttonsPageTitle": "Custom Buttons",
@@ -59,7 +69,8 @@
     "sidebarSignIn": "Sign In",
     "sidebarVerifySignIn": "Verify Sign In",
     "sidebarResetPassword": "Reset Password",
-    "sidebarForgotPassword": "Forgot Password"
+    "sidebarForgotPassword": "Forgot Password",
+    "coreButtonPageTitle": "Button"
   },
 
   "sectionAuthText": {

@@ -3,9 +3,15 @@ import PeopleIcon from "@mui/icons-material/People";
 import { Grid } from "react-feather";
 
 const WRAPPER = {
-  COMPONENTS: {
+  CUSTOM_COMPONENTS: {
     label: "routerPageText.sidebarCustomComponents",
-    key: "COMPONENTS",
+    key: "CUSTOM_COMPONENTS",
+    icon: Grid,
+  },
+
+  CORE_COMPONENTS: {
+    label: "routerPageText.sidebarCoreComponents",
+    key: "CORE_COMPONENTS",
     icon: Grid,
   },
 
@@ -80,31 +86,40 @@ const AUTH_ROUTER = {
 };
 
 const COMPONENTS_ROUTER = {
-  BUTTONS: {
+  BUTTONS_CUSTOM: {
     path: "/buttons",
     label: "routerPageText.sidebarButtons",
     icon: null,
     sidebarVisible: true,
     isWrapper: true,
-    wrapperKey: "COMPONENTS",
+    wrapperKey: "CUSTOM_COMPONENTS",
   },
 
-  ALERTS: {
+  ALERTS_CUSTOM: {
     path: "/alerts",
     label: "routerPageText.sidebarAlerts",
     icon: null,
     sidebarVisible: true,
     isWrapper: true,
-    wrapperKey: "COMPONENTS",
+    wrapperKey: "CUSTOM_COMPONENTS",
   },
 
-  TEXT_EDITOR: {
+  TEXT_EDITOR_CUSTOM: {
     path: "/text-editor",
     label: "routerPageText.sidebarTextEditor",
     icon: null,
     sidebarVisible: true,
     isWrapper: true,
-    wrapperKey: "COMPONENTS",
+    wrapperKey: "CUSTOM_COMPONENTS",
+  },
+
+  BUTTON_CORE: {
+    path: "/core/button",
+    label: "routerPageText.sidebarButton",
+    icon: null,
+    sidebarVisible: true,
+    isWrapper: true,
+    wrapperKey: "CORE_COMPONENTS",
   },
 };
 

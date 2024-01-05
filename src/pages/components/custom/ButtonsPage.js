@@ -1,22 +1,27 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-import TypographyComp from "../../components/Typography";
-import DividerComp from "../../components/Divider";
-import { CardComp, CardContentComp } from "../../components/Card";
+import TypographyComp from "../../../components/Typography";
+import DividerComp from "../../../components/Divider";
+import { CardComp, CardContentComp } from "../../../components/Card";
 import {
-  ErrorAlert,
-  InfoAlert,
-  SuccessAlert,
-  WarningAlert,
-} from "../../components/customizedComp/CustomAlerts";
+  CancelButton,
+  DeleteButton,
+  SaveButton,
+  SendButton,
+  SignInButton,
+  SignUpButton,
+  UpdateButton,
+  UploadPhotoButton,
+  VerifyButton,
+} from "../../../components/customizedComp/CustomButtons";
 
 import { spacing } from "@mui/system";
 
 const Card = styled(CardComp)(spacing);
 const Divider = styled(DividerComp)(spacing);
 
-const AlertsPage = () => {
+const ButtonsPage = () => {
   return (
     <>
       <Title />
@@ -28,12 +33,12 @@ const AlertsPage = () => {
   );
 };
 
-export default AlertsPage;
+export default ButtonsPage;
 
 const Title = () => {
   return (
     <TypographyComp variant="h3" gutterBottom display="inline">
-      routerPageText.alertsPageTitle
+      routerPageText.buttonsPageTitle
     </TypographyComp>
   );
 };
@@ -50,10 +55,15 @@ const Content = () => {
     <Card>
       <CardContentComp>
         <div style={buttonsWrapperStyle}>
-          <SuccessAlert />
-          <InfoAlert />
-          <WarningAlert />
-          <ErrorAlert />
+          <SendButton />
+          <UpdateButton />
+          <SaveButton />
+          <DeleteButton />
+          <CancelButton />
+          <SignInButton />
+          <SignUpButton />
+          <VerifyButton />
+          <UploadPhotoButton />
         </div>
       </CardContentComp>
     </Card>
