@@ -121,6 +121,15 @@ const COMPONENTS_ROUTER = {
     isWrapper: true,
     wrapperKey: "CORE_COMPONENTS",
   },
+
+  ALERT_CORE: {
+    path: "/core/alert",
+    label: "routerPageText.sidebarAlert",
+    icon: null,
+    sidebarVisible: true,
+    isWrapper: true,
+    wrapperKey: "CORE_COMPONENTS",
+  },
 };
 
 export const ROUTER = {

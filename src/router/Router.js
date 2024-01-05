@@ -21,6 +21,7 @@ import AlertsPage from "../pages/components/custom/AlertsPage";
 import TextEditorPage from "../pages/components/custom/TextEditorPage";
 
 import ButtonPageCore from "../pages/components/core/ButtonPage";
+import AlertPageCore from "../pages/components/core/AlertPage";
 
 const PagesRouter = () => {
   return (
@@ -136,6 +137,15 @@ const ComponentsRouter = () => {
         element={
           <DefaultLayout>
             <ButtonPageCore />
+          </DefaultLayout>
+        }
+      />
+
+      <Route
+        path={ROUTER.ALERT_CORE.path}
+        element={
+          <DefaultLayout>
+            <AlertPageCore />
           </DefaultLayout>
         }
       />

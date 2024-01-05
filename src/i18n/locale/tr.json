@@ -47,10 +47,15 @@
     "selectAVariant": "Bir varyant seç",
     "selectASize": "Bir boyut seç",
     "selectAColor": "Bir renk seç",
+    "selectASeverity": "Bir önem derecesi seç",
     "disableTheButton": "Düğmeyi devre dışı bırak",
     "addIconToButtonStart": "Düğme başlangıcına ikon ekle",
     "addIconToEndOfButton": "Düğme sonuna ikon ekle",
-    "buttonMaxWidth": "Düğmeye maksimum genişlik verin"
+    "buttonMaxWidth": "Düğmeye maksimum genişlik verin",
+    "enterTitleTextForTheAlert": "Uyarı için başlık metni gir",
+    "enterContentTextForTheAlert": "Uyarı için içerik metni gir",
+    "showShutdownIcon": "Kapatma ikonunu göster",
+    "addCustomButton": "Özel düğme ekle"
   },
 
   "routerPageText": {
@@ -60,6 +65,7 @@
     "sidebarButtons": "Düğmeler",
     "sidebarButton": "Düğme",
     "sidebarAlerts": "Uyarılar",
+    "sidebarAlert": "Uyarı",
     "sidebarTextEditor": "Metin Düzenleyici",
     "buttonsPageTitle": "Özel Düğmeler",
     "alertsPageTitle": "Özel Uyarılar",
@@ -70,7 +76,8 @@
     "sidebarVerifySignIn": "Oturum Açmayı Doğrula",
     "sidebarResetPassword": "Parola Sıfırla",
     "sidebarForgotPassword": "Parolamı Unuttum",
-    "coreButtonPageTitle": "Düğme"
+    "coreButtonPageTitle": "Düğme",
+    "coreAlertPageTitle": "Uyarı"
   },
 
   "sectionAuthText": {

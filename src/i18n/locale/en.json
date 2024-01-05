@@ -47,10 +47,15 @@
     "selectAVariant": "Select a variant",
     "selectASize": "Select a size",
     "selectAColor": "Select a color",
+    "selectASeverity": "Select a severity",
     "disableTheButton": "Disable the button",
     "addIconToButtonStart": "Add icon to button start",
     "addIconToEndOfButton": "Add icon to button start",
-    "buttonMaxWidth": "Give the button maximum width"
+    "buttonMaxWidth": "Give the button maximum width",
+    "enterTitleTextForTheAlert": "Enter title text for alert",
+    "enterContentTextForTheAlert": "Enter content text for alert",
+    "showShutdownIcon": "Show shutdown icon",
+    "addCustomButton": "Add custom button"
   },
 
   "routerPageText": {
@@ -60,6 +65,7 @@
     "sidebarButtons": "Buttons",
     "sidebarButton": "Button",
     "sidebarAlerts": "Alerts",
+    "sidebarAlert": "Alert",
     "sidebarTextEditor": "Text Editor",
     "buttonsPageTitle": "Custom Buttons",
     "alertsPageTitle": "Custom Alerts",
@@ -70,7 +76,8 @@
     "sidebarVerifySignIn": "Verify Sign In",
     "sidebarResetPassword": "Reset Password",
     "sidebarForgotPassword": "Forgot Password",
-    "coreButtonPageTitle": "Button"
+    "coreButtonPageTitle": "Button",
+    "coreAlertPageTitle": "Alert"
   },
 
   "sectionAuthText": {
