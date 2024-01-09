@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  appName: "App Name",
+  appName: "Startup project",
 };
 
 export const generalAppConfigSlice = createSlice({
