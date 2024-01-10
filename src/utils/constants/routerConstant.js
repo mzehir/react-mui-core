@@ -113,6 +113,15 @@ const COMPONENTS_ROUTER = {
     wrapperKey: "CUSTOM_COMPONENTS",
   },
 
+  ADVANCED_SELECT_CUSTOM: {
+    path: "/custom/advanced-select",
+    label: "routerPageText.sidebarAdvancedSelect",
+    icon: null,
+    sidebarVisible: true,
+    isWrapper: true,
+    wrapperKey: "CUSTOM_COMPONENTS",
+  },
+
   BUTTON_CORE: {
     path: "/core/button",
     label: "routerPageText.sidebarButton",

@@ -71,7 +71,21 @@
     "maxWidthOpen": "Maximum width open",
     "requiredFeatureOpen": "Required feature open",
     "readOnlyFeatureOn": "Read only feature on",
-    "passwordWriteAreaActive":"Password write area active"
+    "passwordWriteAreaActive": "Password write area active",
+    "selectPerson":"Select person",
+    "autoSelectDisableCloseOnSelectPropDescText": "Do not close the dropdown after a value is selected.",
+    "autoSelectClearOnEscapePropDescText": "Clear the value when the escape key is pressed while the input is focused and a value is selected.",
+    "autoSelectDisableClearablePropDescText": "Hide the clear icon in the input.",
+    "autoSelectDisableListWrapPropDescText": "Do not wrap around the list items when navigating with the keyboard arrows, i.e., pressing up arrow on the first item should not move to the last item, and vice versa.",
+    "autoSelectDisabledPropDescText": "Input and pop-up window get disabled.",
+    "autoSelectClearOnBlurPropDescText": "Clear the value if it does not match any of the items in the dropdown when the input loses focus.",
+    "autoSelectAutoCompletePropDescText": "Display the focused item in the input while navigating through the dropdown with the keyboard.",
+    "autoSelectAutoHighlightPropDescText": "Highlight the first item when the dropdown is opened.",
+    "autoSelectSelectOnFocusPropDescText": "Select the entire text in the input when it is focused, provided there is text in the input.",
+    "autoSelectGroupByPropDescText": "Sort the elements in the popup window by the first character.",
+    "autoSelectCustomRenderOptionPropDescText": "The contents of the elements in the pop-up window should have the name-surname part highlighted.",
+    "autoSelectGetOptionDisabledPropDescText": "Disable the selected item in the dropdown.",
+    "autoSelectAddNewItemPropDescText": "Allow the value typed in the input by keyboard to be added to the dropdown items if it does not match any existing items."
   },
 
   "routerPageText": {
@@ -86,8 +100,10 @@
     "sidebarSnackbar": "Snackbar",
     "sidebarTextField": "Text Field",
     "sidebarTextEditor": "Text Editor",
+    "sidebarAdvancedSelect": "Advanced Select",
     "buttonsPageTitle": "Custom Buttons",
     "alertsPageTitle": "Custom Alerts",
+    "advancedSelectPageTitle": "Advanced Select",
     "textEditorPageTitle": "Custom Text Editor",
     "sidebarAuth": "Auth Pages",
     "sidebarSignUp": "Sign Up",

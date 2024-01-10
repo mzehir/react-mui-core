@@ -71,7 +71,21 @@
     "maxWidthOpen": "Maximum genişlik açık",
     "requiredFeatureOpen": "Gereklidir özelliğini açık",
     "readOnlyFeatureOn": "Yalnızca okunur özelliği açık",
-    "passwordWriteAreaActive":"Parola yazma alanı etkin"
+    "passwordWriteAreaActive": "Parola yazma alanı etkin",
+    "selectPerson":"Kişi seç",
+    "autoSelectDisableCloseOnSelectPropDescText": "Seçilen bir değerden sonra açılır pencere kapanmasın.",
+    "autoSelectClearOnEscapePropDescText": "Değer seçiliyken ve input odaklıyken esc tuşuna basıldığında değer silinsin.",
+    "autoSelectDisableClearablePropDescText": "Input'ta yer alan temizle ikonu gizlensin.",
+    "autoSelectDisableListWrapPropDescText": "Klavye ile açılır penceredeki elemanlar arasında gezinirken, ilk elemandan yukarı ok tuşu ile son elemana, son elemandan aşağı ok tuşu ile ilk elemana gidilmesin.",
+    "autoSelectDisabledPropDescText": "Input ve açılır pencere devre dışı olsun.",
+    "autoSelectClearOnBlurPropDescText": "Input'taki değer açılır penceredeki elemanlardan herhangi biriyle eşleşmiyorsa, input'a odak sona erdiğinde değer temizlensin.",
+    "autoSelectAutoCompletePropDescText": "Klavye ile açılır penceredeki elemanlar arasında gezinirken, odaklanılan eleman input'ta gözüksün.",
+    "autoSelectAutoHighlightPropDescText": "Açılır pencere açıldığında, ilk eleman vurgulu olsun.",
+    "autoSelectSelectOnFocusPropDescText": "Input'a odaklanıldığında, input'ta metin varsa seçili olsun.",
+    "autoSelectGroupByPropDescText": "Açılır penceredeki elemanlar, ilk karakterine göre sıralansın.",
+    "autoSelectCustomRenderOptionPropDescText": "Açılır penceredeki elemanların içeriklerinin, ad-soyad kısmı vurgulu olsun.",
+    "autoSelectGetOptionDisabledPropDescText": "Açılır penceredeki elemanlardan seçilmiş olan eleman, açılır pencere içerisinde devre dışı olsun.",
+    "autoSelectAddNewItemPropDescText": "Input'a klavye ile yazılan değer, açılır penceredeki değerlerden herhangi biriyle eşleşmiyorsa, bu değer açılır penceredeki elemanlara eklenebilsin."
   },
 
   "routerPageText": {
@@ -86,8 +100,10 @@
     "sidebarSnackbar": "Snackbar",
     "sidebarTextField": "Metin Alanı",
     "sidebarTextEditor": "Metin Düzenleyici",
+    "sidebarAdvancedSelect": "Gelişmiş Seçme",
     "buttonsPageTitle": "Özel Düğmeler",
     "alertsPageTitle": "Özel Uyarılar",
+    "advancedSelectPageTitle": "Gelişmiş Seçme",
     "textEditorPageTitle": "Özel Metin Düzenleyici",
     "sidebarAuth": "Yetkilendirme Sayfaları",
     "sidebarSignUp": "Kayıt Ol",
@@ -100,7 +116,6 @@
     "coreAlertPageTitle": "Uyarı",
     "coreTypographyPageTitle": "Tipografi",
     "coreTextFieldPageTitle": "Metin Alanı"
-
   },
 
   "sectionAuthText": {

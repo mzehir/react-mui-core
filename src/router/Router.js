@@ -19,6 +19,7 @@ import AccountAndSettings from "../pages/accountAndSettings/AccountAndSettings";
 import ButtonsPage from "../pages/components/custom/ButtonsPage";
 import AlertsPage from "../pages/components/custom/AlertsPage";
 import TextEditorPage from "../pages/components/custom/TextEditorPage";
+import AdvancedSelectPage from "../pages/components/custom/AdvancedSelectPage";
 
 import TypographyPageCore from "../pages/components/core/TypographyPage";
 import TextFieldPageCore from "../pages/components/core/TextFieldPage";
@@ -131,6 +132,15 @@ const ComponentsRouter = () => {
         element={
           <DefaultLayout>
             <TextEditorPage />
+          </DefaultLayout>
+        }
+      />
+
+      <Route
+        path={ROUTER.ADVANCED_SELECT_CUSTOM.path}
+        element={
+          <DefaultLayout>
+            <AdvancedSelectPage />
           </DefaultLayout>
         }
       />
