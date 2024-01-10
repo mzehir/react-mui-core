@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 import { CardComp, CardContentComp } from "../../../components/Card";
 import DividerComp from "../../../components/Divider";
@@ -7,6 +7,7 @@ import TypographyComp from "../../../components/Typography";
 import FormControlLabelCheckboxComp from "../../../components/customizedComp/FormControlLabelCheckboxComp";
 import FormControlSelectComp from "../../../components/customizedComp/FormControlSelectComp";
 import TextFieldComp from "../../../components/TextField";
+import GridComp from "../../../components/Grid";
 import { Toastify } from "../../../components/toastify/toastify";
 import {
   DEFAULT_SETTINGS,
@@ -14,9 +15,7 @@ import {
   toastThemePrepareArr,
   toastTypePrepareArr,
 } from "../../../components/toastify/settings/generalSettings";
-
 import { spacing } from "@mui/system";
-import GridComp from "../../../components/Grid";
 
 const Card = styled(CardComp)(spacing);
 const Divider = styled(DividerComp)(spacing);
@@ -30,7 +29,29 @@ const runToast = (type, position, theme, message) => {
   });
 };
 
-const ExampleToastUsage = () => {
+const ReactToastifyPage = () => {
+  return (
+    <>
+      <Title />
+
+      <Divider my={6} />
+
+      <Content />
+    </>
+  );
+};
+
+export default ReactToastifyPage;
+
+const Title = () => {
+  return (
+    <TypographyComp variant="h3" gutterBottom display="inline">
+      routerPageText.sidebarReactToastify
+    </TypographyComp>
+  );
+};
+
+const Content = () => {
   const toastType = toastTypePrepareArr();
   const toastPosition = toastPositionPrepareArr();
   const toastTheme = toastThemePrepareArr();
@@ -105,5 +126,3 @@ const ExampleToastUsage = () => {
     </Card>
   );
 };
-
-export default ExampleToastUsage;

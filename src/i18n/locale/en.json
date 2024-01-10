@@ -101,6 +101,8 @@
     "sidebarTextField": "Text Field",
     "sidebarTextEditor": "Text Editor",
     "sidebarAdvancedSelect": "Advanced Select",
+    "sidebarReactToastify": "React Toastify",
+    "sidebarCustomFilter": "Custom Filter",
     "buttonsPageTitle": "Custom Buttons",
     "alertsPageTitle": "Custom Alerts",
     "advancedSelectPageTitle": "Advanced Select",

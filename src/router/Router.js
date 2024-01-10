@@ -16,10 +16,12 @@ import ForgotPasswodPage from "../pages/forgotPassword/ForgotPasswodPage";
 import DashboadPage from "../pages/dashboard/DashboardPage";
 import AccountAndSettings from "../pages/accountAndSettings/AccountAndSettings";
 
+import AdvancedSelectPage from "../pages/components/custom/AdvancedSelectPage";
+import CustomFilterPage from "../pages/components/custom/CustomFilterPage";
+import ReactToastifyPage from "../pages/components/custom/ReactToastifyPage";
+import TextEditorPage from "../pages/components/custom/TextEditorPage";
 import ButtonsPage from "../pages/components/custom/ButtonsPage";
 import AlertsPage from "../pages/components/custom/AlertsPage";
-import TextEditorPage from "../pages/components/custom/TextEditorPage";
-import AdvancedSelectPage from "../pages/components/custom/AdvancedSelectPage";
 
 import TypographyPageCore from "../pages/components/core/TypographyPage";
 import TextFieldPageCore from "../pages/components/core/TextFieldPage";
@@ -110,19 +112,28 @@ const ComponentsRouter = () => {
   return (
     <React.Fragment>
       <Route
-        path={ROUTER.BUTTONS_CUSTOM.path}
+        path={ROUTER.ADVANCED_SELECT_CUSTOM.path}
         element={
           <DefaultLayout>
-            <ButtonsPage />
+            <AdvancedSelectPage />
           </DefaultLayout>
         }
       />
 
       <Route
-        path={ROUTER.ALERTS_CUSTOM.path}
+        path={ROUTER.CUSTOM_FILTER_CUSTOM.path}
         element={
           <DefaultLayout>
-            <AlertsPage />
+            <CustomFilterPage />
+          </DefaultLayout>
+        }
+      />
+
+      <Route
+        path={ROUTER.REACT_TOASTIFY_CUSTOM.path}
+        element={
+          <DefaultLayout>
+            <ReactToastifyPage />
           </DefaultLayout>
         }
       />
@@ -137,10 +148,19 @@ const ComponentsRouter = () => {
       />
 
       <Route
-        path={ROUTER.ADVANCED_SELECT_CUSTOM.path}
+        path={ROUTER.BUTTONS_CUSTOM.path}
         element={
           <DefaultLayout>
-            <AdvancedSelectPage />
+            <ButtonsPage />
+          </DefaultLayout>
+        }
+      />
+
+      <Route
+        path={ROUTER.ALERTS_CUSTOM.path}
+        element={
+          <DefaultLayout>
+            <AlertsPage />
           </DefaultLayout>
         }
       />

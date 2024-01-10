@@ -1,23 +1,23 @@
 export const TOAST_TYPE = {
-  INFO: { value: "info", label: "info" },
-  SUCCESS: { value: "success", label: "success" },
-  WARN: { value: "warn", label: "warn" },
-  ERROR: { value: "error", label: "error" },
+  INFO: { value: "info", label: "Info" },
+  SUCCESS: { value: "success", label: "Success" },
+  WARN: { value: "warn", label: "Warn" },
+  ERROR: { value: "error", label: "Error" },
 };
 
 export const TOAST_POSITION = {
-  TOP_LEFT: { value: "top-left", label: "top-left" },
-  TOP_RIGHT: { value: "top-right", label: "top-right" },
-  TOP_CENTER: { value: "top-center", label: "top-center" },
-  BOTTOM_LEFT: { value: "bottom-left", label: "bottom-left" },
-  BOTTOM_RIGHT: { value: "bottom-right", label: "bottom-right" },
-  BOTTOM_CENTER: { value: "bottom-center", label: "bottom-center" },
+  TOP_LEFT: { value: "top-left", label: "Top-Left" },
+  TOP_RIGHT: { value: "top-right", label: "Top-Right" },
+  TOP_CENTER: { value: "top-center", label: "Top-Center" },
+  BOTTOM_LEFT: { value: "bottom-left", label: "Bottom-Left" },
+  BOTTOM_RIGHT: { value: "bottom-right", label: "Bottom-Right" },
+  BOTTOM_CENTER: { value: "bottom-center", label: "Bottom-Center" },
 };
 
 export const TOAST_THEME = {
-  LIGHT: { value: "light", label: "light" },
-  DARK: { value: "dark", label: "dark" },
-  COLORED: { value: "colored", label: "colored" },
+  LIGHT: { value: "light", label: "Light" },
+  DARK: { value: "dark", label: "Dark" },
+  COLORED: { value: "colored", label: "Colored" },
 };
 
 export const toastTypePrepareArr = () => {

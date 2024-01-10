@@ -101,6 +101,8 @@
     "sidebarTextField": "Metin Alanı",
     "sidebarTextEditor": "Metin Düzenleyici",
     "sidebarAdvancedSelect": "Gelişmiş Seçme",
+    "sidebarReactToastify": "React Toastify",
+    "sidebarCustomFilter": "Özel Filtre",
     "buttonsPageTitle": "Özel Düğmeler",
     "alertsPageTitle": "Özel Uyarılar",
     "advancedSelectPageTitle": "Gelişmiş Seçme",

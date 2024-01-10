@@ -59,7 +59,29 @@ const requestByFilter = (filter) => {
   console.log(filter);
 };
 
-const CustomFilterUsage = () => {
+const CustomFilterPage = () => {
+  return (
+    <>
+      <Title />
+
+      <Divider my={6} />
+
+      <Content />
+    </>
+  );
+};
+
+export default CustomFilterPage;
+
+const Title = () => {
+  return (
+    <TypographyComp variant="h3" gutterBottom display="inline">
+      routerPageText.sidebarCustomFilter
+    </TypographyComp>
+  );
+};
+
+const Content = () => {
   return (
     <Card>
       <CardContentComp>
@@ -77,5 +99,3 @@ const CustomFilterUsage = () => {
     </Card>
   );
 };
-
-export default CustomFilterUsage;

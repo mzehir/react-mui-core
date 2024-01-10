@@ -86,18 +86,27 @@ const AUTH_ROUTER = {
 };
 
 const COMPONENTS_ROUTER = {
-  BUTTONS_CUSTOM: {
-    path: "/buttons",
-    label: "routerPageText.sidebarButtons",
+  ADVANCED_SELECT_CUSTOM: {
+    path: "/custom/advanced-select",
+    label: "routerPageText.sidebarAdvancedSelect",
     icon: null,
     sidebarVisible: true,
     isWrapper: true,
     wrapperKey: "CUSTOM_COMPONENTS",
   },
 
-  ALERTS_CUSTOM: {
-    path: "/alerts",
-    label: "routerPageText.sidebarAlerts",
+  CUSTOM_FILTER_CUSTOM: {
+    path: "/custom/custom-filter",
+    label: "routerPageText.sidebarCustomFilter",
+    icon: null,
+    sidebarVisible: true,
+    isWrapper: true,
+    wrapperKey: "CUSTOM_COMPONENTS",
+  },
+
+  REACT_TOASTIFY_CUSTOM: {
+    path: "/custom/react-toastify",
+    label: "routerPageText.sidebarReactToastify",
     icon: null,
     sidebarVisible: true,
     isWrapper: true,
@@ -113,9 +122,18 @@ const COMPONENTS_ROUTER = {
     wrapperKey: "CUSTOM_COMPONENTS",
   },
 
-  ADVANCED_SELECT_CUSTOM: {
-    path: "/custom/advanced-select",
-    label: "routerPageText.sidebarAdvancedSelect",
+  BUTTONS_CUSTOM: {
+    path: "/buttons",
+    label: "routerPageText.sidebarButtons",
+    icon: null,
+    sidebarVisible: true,
+    isWrapper: true,
+    wrapperKey: "CUSTOM_COMPONENTS",
+  },
+
+  ALERTS_CUSTOM: {
+    path: "/alerts",
+    label: "routerPageText.sidebarAlerts",
     icon: null,
     sidebarVisible: true,
     isWrapper: true,
