@@ -114,7 +114,7 @@ const COMPONENTS_ROUTER = {
   },
 
   TEXT_EDITOR_CUSTOM: {
-    path: "/text-editor",
+    path: "/custom/text-editor",
     label: "routerPageText.sidebarTextEditor",
     icon: null,
     sidebarVisible: true,
@@ -123,7 +123,7 @@ const COMPONENTS_ROUTER = {
   },
 
   BUTTONS_CUSTOM: {
-    path: "/buttons",
+    path: "/custom/buttons",
     label: "routerPageText.sidebarButtons",
     icon: null,
     sidebarVisible: true,
@@ -132,7 +132,7 @@ const COMPONENTS_ROUTER = {
   },
 
   ALERTS_CUSTOM: {
-    path: "/alerts",
+    path: "/custom/alerts",
     label: "routerPageText.sidebarAlerts",
     icon: null,
     sidebarVisible: true,
