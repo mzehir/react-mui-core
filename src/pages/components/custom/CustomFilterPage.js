@@ -85,12 +85,6 @@ const Content = () => {
   return (
     <Card>
       <CardContentComp>
-        <TypographyComp variant="h3" gutterBottom display="inline">
-          componentsText.exampleCustomFilterCompUsageTitleText
-        </TypographyComp>
-
-        <Divider my={3} />
-
         <CustomFilterComp
           filterItems={filterItems}
           requestByFilter={requestByFilter}

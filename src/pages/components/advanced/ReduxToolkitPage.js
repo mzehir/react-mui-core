@@ -16,19 +16,35 @@ import { spacing } from "@mui/system";
 const Card = styled(CardComp)(spacing);
 const Divider = styled(DividerComp)(spacing);
 
-const ExampleReduxUsage = () => {
+const ReduxToolkitPage = () => {
+  return (
+    <>
+      <Title />
+
+      <Divider my={6} />
+
+      <Content />
+    </>
+  );
+};
+
+export default ReduxToolkitPage;
+
+const Title = () => {
+  return (
+    <TypographyComp variant="h3" gutterBottom display="inline">
+      routerPageText.sidebarReduxToolkit
+    </TypographyComp>
+  );
+};
+
+const Content = () => {
   const appConfigs = useSelector(generalAppConfigs);
   const dispatch = useDispatch();
 
   return (
     <Card>
       <CardContentComp>
-        <TypographyComp variant="h3" gutterBottom display="inline">
-          componentsText.exampleReduxUsageTitleText
-        </TypographyComp>
-
-        <Divider my={3} />
-
         <TextFieldComp
           label="componentsText.appNewName"
           value={appConfigs.appName}
@@ -38,5 +54,3 @@ const ExampleReduxUsage = () => {
     </Card>
   );
 };
-
-export default ExampleReduxUsage;

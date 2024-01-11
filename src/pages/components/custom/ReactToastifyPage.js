@@ -71,12 +71,6 @@ const Content = () => {
   return (
     <Card>
       <CardContentComp>
-        <TypographyComp variant="h3" gutterBottom display="inline">
-          componentsText.exampleToastUsageTitleText
-        </TypographyComp>
-
-        <Divider my={3} />
-
         <GridComp container spacing={5}>
           <GridComp item xs={12}>
             <FormControlLabelCheckboxComp

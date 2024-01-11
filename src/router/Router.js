@@ -29,6 +29,8 @@ import ButtonPageCore from "../pages/components/core/ButtonPage";
 import AlertPageCore from "../pages/components/core/AlertPage";
 import SnackbarPageCore from "../pages/components/core/SnackbarPage";
 
+import ReduxToolkitPage from "../pages/components/advanced/ReduxToolkitPage";
+
 const PagesRouter = () => {
   return (
     <React.Fragment>
@@ -206,6 +208,15 @@ const ComponentsRouter = () => {
         element={
           <DefaultLayout>
             <SnackbarPageCore />
+          </DefaultLayout>
+        }
+      />
+
+      <Route
+        path={ROUTER.REDUX_TOOLKIT_ADVANCED.path}
+        element={
+          <DefaultLayout>
+            <ReduxToolkitPage />
           </DefaultLayout>
         }
       />

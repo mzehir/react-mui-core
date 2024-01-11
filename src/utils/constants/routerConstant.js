@@ -1,5 +1,6 @@
 import LineAxisIcon from "@mui/icons-material/LineAxis";
 import PeopleIcon from "@mui/icons-material/People";
+import StarIcon from "@mui/icons-material/Star";
 import { Grid } from "react-feather";
 
 const WRAPPER = {
@@ -19,6 +20,12 @@ const WRAPPER = {
     label: "routerPageText.sidebarAuth",
     key: "AUTH",
     icon: PeopleIcon,
+  },
+
+  ADVANCED_COMPONENTS: {
+    label: "routerPageText.sidebarAdvancedComponents",
+    key: "ADVANCED_COMPONENTS",
+    icon: StarIcon,
   },
 };
 
@@ -140,6 +147,8 @@ const COMPONENTS_ROUTER = {
     wrapperKey: "CUSTOM_COMPONENTS",
   },
 
+  //*---------------------------------
+
   BUTTON_CORE: {
     path: "/core/button",
     label: "routerPageText.sidebarButton",
@@ -183,6 +192,17 @@ const COMPONENTS_ROUTER = {
     sidebarVisible: true,
     isWrapper: true,
     wrapperKey: "CORE_COMPONENTS",
+  },
+
+  //*---------------------------------
+
+  REDUX_TOOLKIT_ADVANCED: {
+    path: "/advanced/redux-toolkit",
+    label: "routerPageText.sidebarReduxToolkit",
+    icon: null,
+    sidebarVisible: true,
+    isWrapper: true,
+    wrapperKey: "ADVANCED_COMPONENTS",
   },
 };
 
