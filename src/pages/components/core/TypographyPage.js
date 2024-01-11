@@ -68,58 +68,89 @@ const Content = () => {
   const [noWrap, setNoWrap] = useState(false);
 
   return (
-    <Card>
-      <CardContentComp>
-        <GridComp container spacing={5}>
-          <GridComp item xs={12}>
-            <TypographyComp
-              align={selectedAlign}
-              variant={selectedVariant}
-              noWrap={noWrap}
-            >
-              {text}
-            </TypographyComp>
-          </GridComp>
+    <>
+      <Card>
+        <CardContentComp>
+          <TypographyComp
+            variant="h5"
+            gutterBottom
+            style={{ textAlign: "center" }}
+          >
+            componentsText.observeComponent
+          </TypographyComp>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <TextFieldComp
-              label="componentsText.enterTitleTextForTheTypography"
-              value={text}
-              onChange={(e) => setText(e.target.value)}
-            />
-          </GridComp>
+          <Divider my={3} />
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlSelectComp
-              options={alignOptions}
-              label="componentsText.selectAnAlignment"
-              labelId="componentsText.selectAnAlignment"
-              value={selectedAlign}
-              onChange={(e) => setSelectedAlign(e.target.value)}
-            />
+          <GridComp container spacing={3}>
+            <GridComp item xs={12}>
+              <TypographyComp
+                align={selectedAlign}
+                variant={selectedVariant}
+                noWrap={noWrap}
+              >
+                {text}
+              </TypographyComp>
+            </GridComp>
           </GridComp>
+        </CardContentComp>
+      </Card>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlSelectComp
-              options={variantOptions}
-              label="componentsText.selectAVariant"
-              labelId="componentsText.selectAVariant"
-              value={selectedVariant}
-              onChange={(e) => setSelectedVariant(e.target.value)}
-            />
-          </GridComp>
+      <br />
+      <br />
 
-          <GridComp item xs={12} md={6} lg={3} display="flex">
-            <FormControlLabelCheckboxComp
-              label="componentsText.noWrap"
-              checked={noWrap}
-              onChange={(e) => {
-                setNoWrap(e.target.checked);
-              }}
-            />
+      <Card>
+        <CardContentComp>
+          <TypographyComp
+            variant="h5"
+            gutterBottom
+            style={{ textAlign: "center" }}
+          >
+            componentsText.customizeComponent
+          </TypographyComp>
+
+          <Divider my={3} />
+
+          <GridComp container spacing={5}>
+            <GridComp item xs={12} md={6} lg={3}>
+              <TextFieldComp
+                label="componentsText.enterTitleTextForTheTypography"
+                value={text}
+                onChange={(e) => setText(e.target.value)}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlSelectComp
+                options={alignOptions}
+                label="componentsText.selectAnAlignment"
+                labelId="componentsText.selectAnAlignment"
+                value={selectedAlign}
+                onChange={(e) => setSelectedAlign(e.target.value)}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlSelectComp
+                options={variantOptions}
+                label="componentsText.selectAVariant"
+                labelId="componentsText.selectAVariant"
+                value={selectedVariant}
+                onChange={(e) => setSelectedVariant(e.target.value)}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3} display="flex">
+              <FormControlLabelCheckboxComp
+                label="componentsText.noWrap"
+                checked={noWrap}
+                onChange={(e) => {
+                  setNoWrap(e.target.checked);
+                }}
+              />
+            </GridComp>
           </GridComp>
-        </GridComp>
-      </CardContentComp>
-    </Card>
+        </CardContentComp>
+      </Card>
+    </>
   );
 };

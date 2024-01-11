@@ -70,129 +70,160 @@ const Content = () => {
   const [type, setType] = useState("string");
 
   return (
-    <Card>
-      <CardContentComp>
-        <GridComp container spacing={3}>
-          <GridComp item xs={12}>
-            <TextFieldComp
-              focused
-              label="componentsText.enterText"
-              value={text}
-              onChange={(e) => setText(e.target.value)}
-              color={selectedColor}
-              size={selectedSize}
-              variant={selectedVariant}
-              disabled={disabled}
-              error={error}
-              required={required}
-              fullWidth={fullWidth}
-              type={type}
-              {...(readOnly
-                ? {
-                    InputProps: {
-                      readOnly: true,
-                    },
+    <>
+      <Card>
+        <CardContentComp>
+          <TypographyComp
+            variant="h5"
+            gutterBottom
+            style={{ textAlign: "center" }}
+          >
+            componentsText.observeComponent
+          </TypographyComp>
+
+          <Divider my={3} />
+
+          <GridComp container spacing={3}>
+            <GridComp item xs={12}>
+              <TextFieldComp
+                focused
+                label="componentsText.enterText"
+                value={text}
+                onChange={(e) => setText(e.target.value)}
+                color={selectedColor}
+                size={selectedSize}
+                variant={selectedVariant}
+                disabled={disabled}
+                error={error}
+                required={required}
+                fullWidth={fullWidth}
+                type={type}
+                {...(readOnly
+                  ? {
+                      InputProps: {
+                        readOnly: true,
+                      },
+                    }
+                  : {})}
+              />
+            </GridComp>
+          </GridComp>
+        </CardContentComp>
+      </Card>
+
+      <br />
+      <br />
+
+      <Card>
+        <CardContentComp>
+          <TypographyComp
+            variant="h5"
+            gutterBottom
+            style={{ textAlign: "center" }}
+          >
+            componentsText.customizeComponent
+          </TypographyComp>
+
+          <Divider my={3} />
+
+          <GridComp container spacing={3}>
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlSelectComp
+                options={variantOptions}
+                label="componentsText.selectAVariant"
+                labelId="componentsText.selectAVariant"
+                value={selectedVariant}
+                onChange={(e) => setSelectedVariant(e.target.value)}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlSelectComp
+                options={colorOptions}
+                label="componentsText.selectAColor"
+                labelId="componentsText.selectAColor"
+                value={selectedColor}
+                onChange={(e) => setSelectedColor(e.target.value)}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlSelectComp
+                options={sizeOptions}
+                label="componentsText.selectASize"
+                labelId="componentsText.selectASize"
+                value={selectedSize}
+                onChange={(e) => setSelectedSize(e.target.value)}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3} display="flex">
+              <FormControlLabelCheckboxComp
+                label="componentsText.disableOpen"
+                checked={disabled}
+                onChange={(e) => {
+                  setDisabled(e.target.checked);
+                }}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3} display="flex">
+              <FormControlLabelCheckboxComp
+                label="componentsText.errorOpen"
+                checked={error}
+                onChange={(e) => {
+                  setError(e.target.checked);
+                }}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3} display="flex">
+              <FormControlLabelCheckboxComp
+                label="componentsText.maxWidthOpen"
+                checked={fullWidth}
+                onChange={(e) => {
+                  setFullWidth(e.target.checked);
+                }}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3} display="flex">
+              <FormControlLabelCheckboxComp
+                label="componentsText.requiredFeatureOpen"
+                checked={required}
+                onChange={(e) => {
+                  setRequired(e.target.checked);
+                }}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3} display="flex">
+              <FormControlLabelCheckboxComp
+                label="componentsText.readOnlyFeatureOn"
+                checked={readOnly}
+                onChange={(e) => {
+                  setReadOnly(e.target.checked);
+                }}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3} display="flex">
+              <FormControlLabelCheckboxComp
+                label="componentsText.passwordWriteAreaActive"
+                checked={typeOpen}
+                onChange={(e) => {
+                  setTypeOpen(e.target.checked);
+                  if (e.target.checked) {
+                    setType("password");
+                  } else {
+                    setType("string");
                   }
-                : {})}
-            />
+                }}
+              />
+            </GridComp>
           </GridComp>
-
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlSelectComp
-              options={variantOptions}
-              label="componentsText.selectAVariant"
-              labelId="componentsText.selectAVariant"
-              value={selectedVariant}
-              onChange={(e) => setSelectedVariant(e.target.value)}
-            />
-          </GridComp>
-
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlSelectComp
-              options={colorOptions}
-              label="componentsText.selectAColor"
-              labelId="componentsText.selectAColor"
-              value={selectedColor}
-              onChange={(e) => setSelectedColor(e.target.value)}
-            />
-          </GridComp>
-
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlSelectComp
-              options={sizeOptions}
-              label="componentsText.selectASize"
-              labelId="componentsText.selectASize"
-              value={selectedSize}
-              onChange={(e) => setSelectedSize(e.target.value)}
-            />
-          </GridComp>
-
-          <GridComp item xs={12} md={6} lg={3} display="flex">
-            <FormControlLabelCheckboxComp
-              label="componentsText.disableOpen"
-              checked={disabled}
-              onChange={(e) => {
-                setDisabled(e.target.checked);
-              }}
-            />
-          </GridComp>
-
-          <GridComp item xs={12} md={6} lg={3} display="flex">
-            <FormControlLabelCheckboxComp
-              label="componentsText.errorOpen"
-              checked={error}
-              onChange={(e) => {
-                setError(e.target.checked);
-              }}
-            />
-          </GridComp>
-
-          <GridComp item xs={12} md={6} lg={3} display="flex">
-            <FormControlLabelCheckboxComp
-              label="componentsText.maxWidthOpen"
-              checked={fullWidth}
-              onChange={(e) => {
-                setFullWidth(e.target.checked);
-              }}
-            />
-          </GridComp>
-
-          <GridComp item xs={12} md={6} lg={3} display="flex">
-            <FormControlLabelCheckboxComp
-              label="componentsText.requiredFeatureOpen"
-              checked={required}
-              onChange={(e) => {
-                setRequired(e.target.checked);
-              }}
-            />
-          </GridComp>
-
-          <GridComp item xs={12} md={6} lg={3} display="flex">
-            <FormControlLabelCheckboxComp
-              label="componentsText.readOnlyFeatureOn"
-              checked={readOnly}
-              onChange={(e) => {
-                setReadOnly(e.target.checked);
-              }}
-            />
-          </GridComp>
-
-          <GridComp item xs={12} md={6} lg={3} display="flex">
-            <FormControlLabelCheckboxComp
-              label="componentsText.passwordWriteAreaActive"
-              checked={typeOpen}
-              onChange={(e) => {
-                setTypeOpen(e.target.checked);
-                if (e.target.checked) {
-                  setType("password");
-                } else {
-                  setType("string");
-                }
-              }}
-            />
-          </GridComp>
-        </GridComp>
-      </CardContentComp>
-    </Card>
+        </CardContentComp>
+      </Card>
+    </>
   );
 };

@@ -72,96 +72,127 @@ const Content = () => {
   const [fullWidth, setFullWidth] = useState(false);
 
   return (
-    <Card>
-      <CardContentComp>
-        <GridComp container spacing={5}>
-          <GridComp item xs={12} textAlign="center">
-            <ButtonComp
-              isTranslation={false}
-              variant={selectedVariant}
-              size={selectedSize}
-              color={selectedColor}
-              disabled={disabled}
-              fullWidth={fullWidth}
-              {...(startIconOpen ? { startIcon: <BuildIcon /> } : {})}
-              {...(endIconOpen ? { endIcon: <AddIcon /> } : {})}
-            >
-              {text}
-            </ButtonComp>
-          </GridComp>
+    <>
+      <Card>
+        <CardContentComp>
+          <TypographyComp
+            variant="h5"
+            gutterBottom
+            style={{ textAlign: "center" }}
+          >
+            componentsText.observeComponent
+          </TypographyComp>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <TextFieldComp
-              label="componentsText.enterTextForTheButton"
-              labelIsTranslation={true}
-              value={text}
-              onChange={(e) => setText(e.target.value)}
-            />
-          </GridComp>
+          <Divider my={3} />
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlSelectComp
-              options={variantOptions}
-              label="componentsText.selectAVariant"
-              labelId="componentsText.selectAVariant"
-              value={selectedVariant}
-              onChange={(e) => setSelectedVariant(e.target.value)}
-            />
+          <GridComp container spacing={3}>
+            <GridComp item xs={12}>
+              <ButtonComp
+                isTranslation={false}
+                variant={selectedVariant}
+                size={selectedSize}
+                color={selectedColor}
+                disabled={disabled}
+                fullWidth={fullWidth}
+                {...(startIconOpen ? { startIcon: <BuildIcon /> } : {})}
+                {...(endIconOpen ? { endIcon: <AddIcon /> } : {})}
+              >
+                {text}
+              </ButtonComp>
+            </GridComp>
           </GridComp>
+        </CardContentComp>
+      </Card>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlSelectComp
-              options={sizeOptions}
-              label="componentsText.selectASize"
-              labelId="componentsText.selectASize"
-              value={selectedSize}
-              onChange={(e) => setSelectedSize(e.target.value)}
-            />
-          </GridComp>
+      <br />
+      <br />
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlSelectComp
-              options={colorOptions}
-              label="componentsText.selectAColor"
-              labelId="componentsText.selectAColor"
-              value={selectedColor}
-              onChange={(e) => setSelectedColor(e.target.value)}
-            />
-          </GridComp>
+      <Card>
+        <CardContentComp>
+          <TypographyComp
+            variant="h5"
+            gutterBottom
+            style={{ textAlign: "center" }}
+          >
+            componentsText.customizeComponent
+          </TypographyComp>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlLabelCheckboxComp
-              label="componentsText.disableTheButton"
-              checked={disabled}
-              onChange={(e) => setDisabled(e.target.checked)}
-            />
-          </GridComp>
+          <Divider my={3} />
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlLabelCheckboxComp
-              label="componentsText.addIconToButtonStart"
-              checked={startIconOpen}
-              onChange={(e) => setStartIconOpen(e.target.checked)}
-            />
-          </GridComp>
+          <GridComp container spacing={5}>
+            <GridComp item xs={12} md={6} lg={3}>
+              <TextFieldComp
+                label="componentsText.enterTextForTheButton"
+                labelIsTranslation={true}
+                value={text}
+                onChange={(e) => setText(e.target.value)}
+              />
+            </GridComp>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlLabelCheckboxComp
-              label="componentsText.addIconToEndOfButton"
-              checked={endIconOpen}
-              onChange={(e) => setEndIconOpen(e.target.checked)}
-            />
-          </GridComp>
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlSelectComp
+                options={variantOptions}
+                label="componentsText.selectAVariant"
+                labelId="componentsText.selectAVariant"
+                value={selectedVariant}
+                onChange={(e) => setSelectedVariant(e.target.value)}
+              />
+            </GridComp>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlLabelCheckboxComp
-              label="componentsText.buttonMaxWidth"
-              checked={fullWidth}
-              onChange={(e) => setFullWidth(e.target.checked)}
-            />
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlSelectComp
+                options={sizeOptions}
+                label="componentsText.selectASize"
+                labelId="componentsText.selectASize"
+                value={selectedSize}
+                onChange={(e) => setSelectedSize(e.target.value)}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlSelectComp
+                options={colorOptions}
+                label="componentsText.selectAColor"
+                labelId="componentsText.selectAColor"
+                value={selectedColor}
+                onChange={(e) => setSelectedColor(e.target.value)}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlLabelCheckboxComp
+                label="componentsText.disableTheButton"
+                checked={disabled}
+                onChange={(e) => setDisabled(e.target.checked)}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlLabelCheckboxComp
+                label="componentsText.addIconToButtonStart"
+                checked={startIconOpen}
+                onChange={(e) => setStartIconOpen(e.target.checked)}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlLabelCheckboxComp
+                label="componentsText.addIconToEndOfButton"
+                checked={endIconOpen}
+                onChange={(e) => setEndIconOpen(e.target.checked)}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlLabelCheckboxComp
+                label="componentsText.buttonMaxWidth"
+                checked={fullWidth}
+                onChange={(e) => setFullWidth(e.target.checked)}
+              />
+            </GridComp>
           </GridComp>
-        </GridComp>
-      </CardContentComp>
-    </Card>
+        </CardContentComp>
+      </Card>
+    </>
   );
 };

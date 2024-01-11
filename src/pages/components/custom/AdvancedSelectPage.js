@@ -54,163 +54,194 @@ const Content = () => {
   const [addNewItem, setAddNewItem] = useState(false);
 
   return (
-    <Card>
-      <CardContentComp>
-        <GridComp container spacing={3}>
-          <GridComp item xs={12}>
-            <ForUserSelect
-              options={userOptions}
-              setOptions={setUserOptions}
-              disableCloseOnSelect={disableCloseOnSelect}
-              clearOnEscape={clearOnEscape}
-              disableClearable={disableClearable}
-              disableListWrap={disableListWrap}
-              disabled={disabled}
-              clearOnBlur={clearOnBlur}
-              autoComplete={autoComplete}
-              autoHighlight={autoHighlight}
-              selectOnFocus={selectOnFocus}
-              getOptionDisabled={getOptionDisabled}
-              groupBy={groupBy}
-              customRenderOption={customRenderOption}
-              addNewItem={addNewItem}
-              selectedValue={selectedValue}
-              setSelectedValue={setSelectedValue}
-            />
-          </GridComp>
+    <>
+      <Card>
+        <CardContentComp>
+          <TypographyComp
+            variant="h5"
+            gutterBottom
+            style={{ textAlign: "center" }}
+          >
+            componentsText.observeComponent
+          </TypographyComp>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlLabelCheckboxComp
-              label="componentsText.autoSelectDisableCloseOnSelectPropDescText"
-              checked={disableCloseOnSelect}
-              onChange={(e) => {
-                setDisableCloseOnSelect(e.target.checked);
-              }}
-            />
-          </GridComp>
+          <Divider my={3} />
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlLabelCheckboxComp
-              label="componentsText.autoSelectClearOnEscapePropDescText"
-              checked={clearOnEscape}
-              onChange={(e) => {
-                setClearOnEscape(e.target.checked);
-              }}
-            />
+          <GridComp container spacing={3}>
+            <GridComp item xs={12}>
+              <ForUserSelect
+                options={userOptions}
+                setOptions={setUserOptions}
+                disableCloseOnSelect={disableCloseOnSelect}
+                clearOnEscape={clearOnEscape}
+                disableClearable={disableClearable}
+                disableListWrap={disableListWrap}
+                disabled={disabled}
+                clearOnBlur={clearOnBlur}
+                autoComplete={autoComplete}
+                autoHighlight={autoHighlight}
+                selectOnFocus={selectOnFocus}
+                getOptionDisabled={getOptionDisabled}
+                groupBy={groupBy}
+                customRenderOption={customRenderOption}
+                addNewItem={addNewItem}
+                selectedValue={selectedValue}
+                setSelectedValue={setSelectedValue}
+              />
+            </GridComp>
           </GridComp>
+        </CardContentComp>
+      </Card>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlLabelCheckboxComp
-              label="componentsText.autoSelectDisableClearablePropDescText"
-              checked={disableClearable}
-              onChange={(e) => {
-                setDisableClearable(e.target.checked);
-              }}
-            />
-          </GridComp>
+      <br />
+      <br />
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlLabelCheckboxComp
-              label="componentsText.autoSelectDisableListWrapPropDescText"
-              checked={disableListWrap}
-              onChange={(e) => {
-                setDisableListWrap(e.target.checked);
-              }}
-            />
-          </GridComp>
+      <Card>
+        <CardContentComp>
+          <TypographyComp
+            variant="h5"
+            gutterBottom
+            style={{ textAlign: "center" }}
+          >
+            componentsText.customizeComponent
+          </TypographyComp>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlLabelCheckboxComp
-              label="componentsText.autoSelectDisabledPropDescText"
-              checked={disabled}
-              onChange={(e) => {
-                setDisabled(e.target.checked);
-              }}
-            />
-          </GridComp>
+          <Divider my={3} />
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlLabelCheckboxComp
-              label="componentsText.autoSelectClearOnBlurPropDescText"
-              checked={clearOnBlur}
-              onChange={(e) => {
-                setClearOnBlur(e.target.checked);
-              }}
-            />
-          </GridComp>
+          <GridComp container spacing={3}>
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlLabelCheckboxComp
+                label="componentsText.autoSelectDisableCloseOnSelectPropDescText"
+                checked={disableCloseOnSelect}
+                onChange={(e) => {
+                  setDisableCloseOnSelect(e.target.checked);
+                }}
+              />
+            </GridComp>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlLabelCheckboxComp
-              label="componentsText.autoSelectAutoCompletePropDescText"
-              checked={autoComplete}
-              onChange={(e) => {
-                setAutoComplete(e.target.checked);
-              }}
-            />
-          </GridComp>
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlLabelCheckboxComp
+                label="componentsText.autoSelectClearOnEscapePropDescText"
+                checked={clearOnEscape}
+                onChange={(e) => {
+                  setClearOnEscape(e.target.checked);
+                }}
+              />
+            </GridComp>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlLabelCheckboxComp
-              label="componentsText.autoSelectAutoHighlightPropDescText"
-              checked={autoHighlight}
-              onChange={(e) => {
-                setAutoHighlight(e.target.checked);
-              }}
-            />
-          </GridComp>
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlLabelCheckboxComp
+                label="componentsText.autoSelectDisableClearablePropDescText"
+                checked={disableClearable}
+                onChange={(e) => {
+                  setDisableClearable(e.target.checked);
+                }}
+              />
+            </GridComp>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlLabelCheckboxComp
-              label="componentsText.autoSelectSelectOnFocusPropDescText"
-              checked={selectOnFocus}
-              onChange={(e) => {
-                setSelectOnFocus(e.target.checked);
-              }}
-            />
-          </GridComp>
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlLabelCheckboxComp
+                label="componentsText.autoSelectDisableListWrapPropDescText"
+                checked={disableListWrap}
+                onChange={(e) => {
+                  setDisableListWrap(e.target.checked);
+                }}
+              />
+            </GridComp>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlLabelCheckboxComp
-              label="componentsText.autoSelectGroupByPropDescText"
-              checked={groupBy}
-              onChange={(e) => {
-                setGroupBy(e.target.checked);
-              }}
-            />
-          </GridComp>
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlLabelCheckboxComp
+                label="componentsText.autoSelectDisabledPropDescText"
+                checked={disabled}
+                onChange={(e) => {
+                  setDisabled(e.target.checked);
+                }}
+              />
+            </GridComp>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlLabelCheckboxComp
-              label="componentsText.autoSelectCustomRenderOptionPropDescText"
-              checked={customRenderOption}
-              onChange={(e) => {
-                setCustomRenderOption(e.target.checked);
-              }}
-            />
-          </GridComp>
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlLabelCheckboxComp
+                label="componentsText.autoSelectClearOnBlurPropDescText"
+                checked={clearOnBlur}
+                onChange={(e) => {
+                  setClearOnBlur(e.target.checked);
+                }}
+              />
+            </GridComp>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlLabelCheckboxComp
-              label="componentsText.autoSelectGetOptionDisabledPropDescText"
-              checked={getOptionDisabled}
-              onChange={(e) => {
-                setGetOptionDisabled(e.target.checked);
-              }}
-            />
-          </GridComp>
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlLabelCheckboxComp
+                label="componentsText.autoSelectAutoCompletePropDescText"
+                checked={autoComplete}
+                onChange={(e) => {
+                  setAutoComplete(e.target.checked);
+                }}
+              />
+            </GridComp>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlLabelCheckboxComp
-              label="componentsText.autoSelectAddNewItemPropDescText"
-              checked={addNewItem}
-              onChange={(e) => {
-                setAddNewItem(e.target.checked);
-              }}
-            />
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlLabelCheckboxComp
+                label="componentsText.autoSelectAutoHighlightPropDescText"
+                checked={autoHighlight}
+                onChange={(e) => {
+                  setAutoHighlight(e.target.checked);
+                }}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlLabelCheckboxComp
+                label="componentsText.autoSelectSelectOnFocusPropDescText"
+                checked={selectOnFocus}
+                onChange={(e) => {
+                  setSelectOnFocus(e.target.checked);
+                }}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlLabelCheckboxComp
+                label="componentsText.autoSelectGroupByPropDescText"
+                checked={groupBy}
+                onChange={(e) => {
+                  setGroupBy(e.target.checked);
+                }}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlLabelCheckboxComp
+                label="componentsText.autoSelectCustomRenderOptionPropDescText"
+                checked={customRenderOption}
+                onChange={(e) => {
+                  setCustomRenderOption(e.target.checked);
+                }}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlLabelCheckboxComp
+                label="componentsText.autoSelectGetOptionDisabledPropDescText"
+                checked={getOptionDisabled}
+                onChange={(e) => {
+                  setGetOptionDisabled(e.target.checked);
+                }}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlLabelCheckboxComp
+                label="componentsText.autoSelectAddNewItemPropDescText"
+                checked={addNewItem}
+                onChange={(e) => {
+                  setAddNewItem(e.target.checked);
+                }}
+              />
+            </GridComp>
           </GridComp>
-        </GridComp>
-      </CardContentComp>
-    </Card>
+        </CardContentComp>
+      </Card>
+    </>
   );
 };
 

@@ -69,54 +69,85 @@ const Content = () => {
   }, [toastActive, type, position, theme, text]);
 
   return (
-    <Card>
-      <CardContentComp>
-        <GridComp container spacing={5}>
-          <GridComp item xs={12}>
-            <FormControlLabelCheckboxComp
-              label="componentsText.reactToastifyActivePassive"
-              value={toastActive}
-              onChange={(e) => setToastActive(e.target.checked)}
-            />
-          </GridComp>
+    <>
+      <Card>
+        <CardContentComp>
+          <TypographyComp
+            variant="h5"
+            gutterBottom
+            style={{ textAlign: "center" }}
+          >
+            componentsText.observeComponent
+          </TypographyComp>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlSelectComp
-              options={toastType}
-              label="componentsText.toastType"
-              labelId="componentsText.toastType"
-              value={type}
-              onChange={(e) => setType(e.target.value)}
-            />
+          <Divider my={3} />
+
+          <GridComp container spacing={3}>
+            <GridComp item xs={12}>
+              <FormControlLabelCheckboxComp
+                label="componentsText.reactToastifyActivePassive"
+                value={toastActive}
+                onChange={(e) => setToastActive(e.target.checked)}
+              />
+            </GridComp>
           </GridComp>
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlSelectComp
-              options={toastPosition}
-              label="componentsText.toastPosition"
-              labelId="componentsText.toastPosition"
-              value={position}
-              onChange={(e) => setPosition(e.target.value)}
-            />
+        </CardContentComp>
+      </Card>
+
+      <br />
+      <br />
+
+      <Card>
+        <CardContentComp>
+          <TypographyComp
+            variant="h5"
+            gutterBottom
+            style={{ textAlign: "center" }}
+          >
+            componentsText.customizeComponent
+          </TypographyComp>
+
+          <Divider my={3} />
+
+          <GridComp container spacing={5}>
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlSelectComp
+                options={toastType}
+                label="componentsText.toastType"
+                labelId="componentsText.toastType"
+                value={type}
+                onChange={(e) => setType(e.target.value)}
+              />
+            </GridComp>
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlSelectComp
+                options={toastPosition}
+                label="componentsText.toastPosition"
+                labelId="componentsText.toastPosition"
+                value={position}
+                onChange={(e) => setPosition(e.target.value)}
+              />
+            </GridComp>
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlSelectComp
+                options={toastTheme}
+                label="componentsText.toastTheme"
+                labelId="componentsText.toastTheme"
+                value={theme}
+                onChange={(e) => setTheme(e.target.value)}
+              />
+            </GridComp>
+            <GridComp item xs={12} md={6} lg={3}>
+              <TextFieldComp
+                label="componentsText.toastText"
+                labelIsTranslation={true}
+                value={text}
+                onChange={(e) => setText(e.target.value)}
+              />
+            </GridComp>
           </GridComp>
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlSelectComp
-              options={toastTheme}
-              label="componentsText.toastTheme"
-              labelId="componentsText.toastTheme"
-              value={theme}
-              onChange={(e) => setTheme(e.target.value)}
-            />
-          </GridComp>
-          <GridComp item xs={12} md={6} lg={3}>
-            <TextFieldComp
-              label="componentsText.toastText"
-              labelIsTranslation={true}
-              value={text}
-              onChange={(e) => setText(e.target.value)}
-            />
-          </GridComp>
-        </GridComp>
-      </CardContentComp>
-    </Card>
+        </CardContentComp>
+      </Card>
+    </>
   );
 };

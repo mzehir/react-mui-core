@@ -73,109 +73,142 @@ const Content = () => {
   const [customButtonVisible, setCustomButtonVisible] = useState(false);
 
   return (
-    <Card>
-      <CardContentComp>
-        <GridComp container spacing={5}>
-          <GridComp item xs={12}>
-            <AlertComp
-              isTranslation={false}
-              color={selectedColor}
-              severity={selectedSeverity}
-              variant={selectedVariant}
-              {...(closeIconVisible
-                ? { onClose: () => console.log("Alert onClose event") }
-                : {})}
-              {...(customButtonVisible
-                ? {
-                    action: (
-                      <ButtonComp
-                        isTranslation={false}
-                        color="inherit"
-                        size="small"
-                        onClick={() => console.log("Button onClick event")}
-                      >
-                        UNDO
-                      </ButtonComp>
-                    ),
-                  }
-                : {})}
-            >
-              <AlertTitleComp isTranslation={false}>{titleText}</AlertTitleComp>
-              {contentText}
-            </AlertComp>
-          </GridComp>
+    <>
+      <Card>
+        <CardContentComp>
+          <TypographyComp
+            variant="h5"
+            gutterBottom
+            style={{ textAlign: "center" }}
+          >
+            componentsText.observeComponent
+          </TypographyComp>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <TextFieldComp
-              label="componentsText.enterTitleTextForTheAlert"
-              labelIsTranslation={true}
-              value={titleText}
-              onChange={(e) => setTitleText(e.target.value)}
-            />
-          </GridComp>
+          <Divider my={3} />
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <TextFieldComp
-              label="componentsText.enterContentTextForTheAlert"
-              labelIsTranslation={true}
-              value={contentText}
-              onChange={(e) => setContentText(e.target.value)}
-            />
+          <GridComp container spacing={3}>
+            <GridComp item xs={12}>
+              <AlertComp
+                isTranslation={false}
+                color={selectedColor}
+                severity={selectedSeverity}
+                variant={selectedVariant}
+                {...(closeIconVisible
+                  ? { onClose: () => console.log("Alert onClose event") }
+                  : {})}
+                {...(customButtonVisible
+                  ? {
+                      action: (
+                        <ButtonComp
+                          isTranslation={false}
+                          color="inherit"
+                          size="small"
+                          onClick={() => console.log("Button onClick event")}
+                        >
+                          UNDO
+                        </ButtonComp>
+                      ),
+                    }
+                  : {})}
+              >
+                <AlertTitleComp isTranslation={false}>
+                  {titleText}
+                </AlertTitleComp>
+                {contentText}
+              </AlertComp>
+            </GridComp>
           </GridComp>
+        </CardContentComp>
+      </Card>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlSelectComp
-              options={colorOptions}
-              label="componentsText.selectAColor"
-              labelId="componentsText.selectAColor"
-              value={selectedColor}
-              onChange={(e) => setSelectedColor(e.target.value)}
-            />
-          </GridComp>
+      <br />
+      <br />
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlSelectComp
-              options={severityOptions}
-              label="componentsText.selectASeverity"
-              labelId="componentsText.selectASeverity"
-              value={selectedSeverity}
-              onChange={(e) => setSelectedSeverity(e.target.value)}
-            />
-          </GridComp>
+      <Card>
+        <CardContentComp>
+          <TypographyComp
+            variant="h5"
+            gutterBottom
+            style={{ textAlign: "center" }}
+          >
+            componentsText.customizeComponent
+          </TypographyComp>
 
-          <GridComp item xs={12} md={6} lg={3}>
-            <FormControlSelectComp
-              options={variantOptions}
-              label="componentsText.selectAVariant"
-              labelId="componentsText.selectAVariant"
-              value={selectedVariant}
-              onChange={(e) => setSelectedVariant(e.target.value)}
-            />
-          </GridComp>
+          <Divider my={3} />
 
-          <GridComp item xs={12} md={6} lg={3} display="flex">
-            <FormControlLabelCheckboxComp
-              label="componentsText.showShutdownIcon"
-              checked={closeIconVisible}
-              onChange={(e) => {
-                if (e.target.checked) setCustomButtonVisible(false);
-                setCloseIconVisible(e.target.checked);
-              }}
-            />
-          </GridComp>
+          <GridComp container spacing={5}>
+            <GridComp item xs={12} md={6} lg={3}>
+              <TextFieldComp
+                label="componentsText.enterTitleTextForTheAlert"
+                labelIsTranslation={true}
+                value={titleText}
+                onChange={(e) => setTitleText(e.target.value)}
+              />
+            </GridComp>
 
-          <GridComp item xs={12} md={6} lg={3} display="flex">
-            <FormControlLabelCheckboxComp
-              label="componentsText.addCustomButton"
-              checked={customButtonVisible}
-              onChange={(e) => {
-                if (e.target.checked) setCloseIconVisible(false);
-                setCustomButtonVisible(e.target.checked);
-              }}
-            />
+            <GridComp item xs={12} md={6} lg={3}>
+              <TextFieldComp
+                label="componentsText.enterContentTextForTheAlert"
+                labelIsTranslation={true}
+                value={contentText}
+                onChange={(e) => setContentText(e.target.value)}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlSelectComp
+                options={colorOptions}
+                label="componentsText.selectAColor"
+                labelId="componentsText.selectAColor"
+                value={selectedColor}
+                onChange={(e) => setSelectedColor(e.target.value)}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlSelectComp
+                options={severityOptions}
+                label="componentsText.selectASeverity"
+                labelId="componentsText.selectASeverity"
+                value={selectedSeverity}
+                onChange={(e) => setSelectedSeverity(e.target.value)}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3}>
+              <FormControlSelectComp
+                options={variantOptions}
+                label="componentsText.selectAVariant"
+                labelId="componentsText.selectAVariant"
+                value={selectedVariant}
+                onChange={(e) => setSelectedVariant(e.target.value)}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3} display="flex">
+              <FormControlLabelCheckboxComp
+                label="componentsText.showShutdownIcon"
+                checked={closeIconVisible}
+                onChange={(e) => {
+                  if (e.target.checked) setCustomButtonVisible(false);
+                  setCloseIconVisible(e.target.checked);
+                }}
+              />
+            </GridComp>
+
+            <GridComp item xs={12} md={6} lg={3} display="flex">
+              <FormControlLabelCheckboxComp
+                label="componentsText.addCustomButton"
+                checked={customButtonVisible}
+                onChange={(e) => {
+                  if (e.target.checked) setCloseIconVisible(false);
+                  setCustomButtonVisible(e.target.checked);
+                }}
+              />
+            </GridComp>
           </GridComp>
-        </GridComp>
-      </CardContentComp>
-    </Card>
+        </CardContentComp>
+      </Card>
+    </>
   );
 };

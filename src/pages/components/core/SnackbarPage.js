@@ -79,21 +79,44 @@ const Content = () => {
     <>
       <Card>
         <CardContentComp>
-          <GridComp container spacing={5}>
-            <GridComp
-              item
-              xs={12}
-              display="flex"
-              textAlign="center"
-              justifyContent="center"
-            >
+          <TypographyComp
+            variant="h5"
+            gutterBottom
+            style={{ textAlign: "center" }}
+          >
+            componentsText.observeComponent
+          </TypographyComp>
+
+          <Divider my={3} />
+
+          <GridComp container spacing={3}>
+            <GridComp item xs={12}>
               <FormControlLabelCheckboxComp
                 label="componentsText.snackbarOpen"
                 checked={open}
                 onChange={(e) => setOpen(e.target.checked)}
               />
             </GridComp>
+          </GridComp>
+        </CardContentComp>
+      </Card>
 
+      <br />
+      <br />
+
+      <Card>
+        <CardContentComp>
+          <TypographyComp
+            variant="h5"
+            gutterBottom
+            style={{ textAlign: "center" }}
+          >
+            componentsText.customizeComponent
+          </TypographyComp>
+
+          <Divider my={3} />
+
+          <GridComp container spacing={5}>
             <GridComp item xs={12} md={6} lg={3}>
               <TextFieldComp
                 label="componentsText.enterTextForTheSnackbar"
