@@ -87,7 +87,12 @@
     "autoSelectGroupByPropDescText": "Açılır penceredeki elemanlar, ilk karakterine göre sıralansın.",
     "autoSelectCustomRenderOptionPropDescText": "Açılır penceredeki elemanların içeriklerinin, ad-soyad kısmı vurgulu olsun.",
     "autoSelectGetOptionDisabledPropDescText": "Açılır penceredeki elemanlardan seçilmiş olan eleman, açılır pencere içerisinde devre dışı olsun.",
-    "autoSelectAddNewItemPropDescText": "Input'a klavye ile yazılan değer, açılır penceredeki değerlerden herhangi biriyle eşleşmiyorsa, bu değer açılır penceredeki elemanlara eklenebilsin."
+    "autoSelectAddNewItemPropDescText": "Input'a klavye ile yazılan değer, açılır penceredeki değerlerden herhangi biriyle eşleşmiyorsa, bu değer açılır penceredeki elemanlara eklenebilsin.",
+    "dashboardTitleTagText": "React MUI Uygulaması",
+    "dashboardTitleText": "React JS ve Material UI kullanılarak oluşturulmuş bir ön uç başlangıç projesidir.",
+    "dashboardTitleDescText": "Bu uygulama, ihtiyaca özel web uygulamalarını daha hızlı oluşturmaya ve geliştirmeye yardımcı olan bir araçtır. İçerisinde temel bileşenler, özel bileşenler, ileri seviye bileşenler, Redux Toolkit entegrasyonu, Context ile API katmanı kullanımı, Context ile çoklu dil desteği gibi birçok özellik barındırmaktadır. Esnek yapısı sayesinde kolaylıkla ihtiyaçlara uygun şekilde yeniden özelleştirilebilir.",
+    "integrations": "Entegrasyonlar",
+    "inAppVisuals": "Uygulama içi görseller"
   },
 
   "routerPageText": {

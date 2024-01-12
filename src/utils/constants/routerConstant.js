@@ -30,8 +30,15 @@ const WRAPPER = {
 };
 
 const PAGES_ROUTER = {
-  DASHBOARD: {
+  DASHBOARD_PRESENTATION: {
     path: "/",
+    label: "routerPageText.sidebarDashboard",
+    icon: LineAxisIcon,
+    sidebarVisible: false,
+  },
+
+  DASHBOARD: {
+    path: "/dashboard",
     label: "routerPageText.sidebarDashboard",
     icon: LineAxisIcon,
     sidebarVisible: true,

@@ -87,7 +87,12 @@
     "autoSelectGroupByPropDescText": "Sort the elements in the popup window by the first character.",
     "autoSelectCustomRenderOptionPropDescText": "The contents of the elements in the pop-up window should have the name-surname part highlighted.",
     "autoSelectGetOptionDisabledPropDescText": "Disable the selected item in the dropdown.",
-    "autoSelectAddNewItemPropDescText": "Allow the value typed in the input by keyboard to be added to the dropdown items if it does not match any existing items."
+    "autoSelectAddNewItemPropDescText": "Allow the value typed in the input by keyboard to be added to the dropdown items if it does not match any existing items.",
+    "dashboardTitleTagText": "React MUI App",
+    "dashboardTitleText": "It is a front-end starter project created using React JS and Material UI.",
+    "dashboardTitleDescText": "This application is a tool that helps to create and develop customized web applications faster. It includes many features such as basic components, custom components, advanced components, Redux Toolkit integration, API layer usage with Context, multi-language support with Context. Thanks to its flexible structure, it can be easily customized according to the needs.",
+    "integrations": "Integrations",
+    "inAppVisuals": "In-app visuals"
   },
 
   "routerPageText": {

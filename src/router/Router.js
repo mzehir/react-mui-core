@@ -5,6 +5,7 @@ import { ROUTER } from "../utils/constants/routerConstant";
 
 import AuthLayout from "../layouts/AuthLayout";
 import DefaultLayout from "../layouts/DefaultLayout";
+import PresentationLayout from "../layouts/PresentationLayout";
 import AuthGuard from "../guard/AuthGuard";
 
 import SignUpPage from "../pages/signUp/SignUpPage";
@@ -14,6 +15,7 @@ import ResetPasswordPage from "../pages/resetPassword/ResetPasswordPage";
 import ForgotPasswodPage from "../pages/forgotPassword/ForgotPasswodPage";
 
 import DashboadPage from "../pages/dashboard/DashboardPage";
+import DashboardPresentationPage from "../pages/dashboardPresentation/DashboardPresentationPage";
 import AccountAndSettings from "../pages/accountAndSettings/AccountAndSettings";
 
 import AdvancedSelectPage from "../pages/components/custom/AdvancedSelectPage";
@@ -34,6 +36,15 @@ import ReduxToolkitPage from "../pages/components/advanced/ReduxToolkitPage";
 const PagesRouter = () => {
   return (
     <React.Fragment>
+      <Route
+        path={ROUTER.DASHBOARD_PRESENTATION.path}
+        element={
+          <PresentationLayout>
+            <DashboardPresentationPage />
+          </PresentationLayout>
+        }
+      />
+
       <Route
         path={ROUTER.DASHBOARD.path}
         element={
