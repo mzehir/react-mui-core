@@ -34,7 +34,7 @@ const DemoImage = styled.img`
   }
 `;
 
-const Variant = ({ title, img, path }) => {
+const Item = ({ title, img, path }) => {
   return (
     <GridComp item xs={12} sm={6} md={4} lg={4}>
       <DemoContent px={2}>
@@ -52,7 +52,7 @@ const Variant = ({ title, img, path }) => {
 };
 
 function DemosSection() {
-  const variantItems = [
+  const items = [
     {
       title: "Dashboard",
       imgPath: "dashboard",
@@ -109,8 +109,8 @@ function DemosSection() {
         <BoxComp mb={8} />
 
         <GridComp container spacing={10}>
-          {variantItems.map((item, index) => (
-            <Variant
+          {items.map((item, index) => (
+            <Item
               key={index.toString()}
               title={item.title}
               img={item.imgPath}
