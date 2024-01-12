@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import styled from "styled-components/macro";
 
 import BoxComp from "../../../../components/Box";
@@ -36,8 +35,6 @@ const DemoImage = styled.img`
 `;
 
 const Variant = ({ title, img, path }) => {
-  const navigate = useNavigate();
-
   return (
     <GridComp item xs={12} sm={6} md={4} lg={4}>
       <DemoContent px={2}>
