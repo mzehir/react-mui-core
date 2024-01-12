@@ -16,5 +16,3 @@ export const FIREBASE_CONFIG = {
 export const GOOGLE_MAPS_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
 export const TINYMCE_API_KEY = process.env.REACT_APP_TINYMCE_API_KEY;
-
-export const APP_NAME = process.env.REACT_APP_APP_NAME;

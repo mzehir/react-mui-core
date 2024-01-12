@@ -4,7 +4,6 @@ import styled from "styled-components/macro";
 import GridComp from "../Grid";
 import ListItemButtonComp from "../ListItemButton";
 import ListItemTextComp from "../ListItemText";
-// import { APP_NAME } from "../../utils/config/config";
 
 import { List } from "@mui/material";
 

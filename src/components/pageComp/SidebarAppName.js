@@ -3,7 +3,6 @@ import styled from "styled-components/macro";
 
 // import ChipComp from "../Chip";
 import BoxComp from "../Box";
-// import { APP_NAME } from "../../utils/config/config";
 
 // import { green } from "@mui/material/colors";
 import { spacing } from "@mui/system";
