@@ -14,9 +14,6 @@ import {
 import { STATE_KEY } from "../../utils/constants/locationStateKey";
 import { accountAndSettingsPageResizeSettings } from "../../utils/constants/resizeWindowConstant";
 
-// import useMediaQuery from "@mui/material/useMediaQuery";
-// import { useTheme } from "@mui/material/styles";
-
 const AccountAndSettings = () => {
   const location = useLocation();
 
@@ -68,55 +65,8 @@ const AccountAndSettings = () => {
           contentItems={contentItems}
         />
       </GridComp>
-
-      {/* <GridComp item xs={12}>
-        <Resize />
-      </GridComp> */}
     </GridComp>
   );
 };
 
 export default AccountAndSettings;
-
-// const Resize = () => {
-//   const theme = useTheme();
-//   const isXs = useMediaQuery(theme.breakpoints.down("xs"));
-//   const isSm = useMediaQuery(theme.breakpoints.down("sm"));
-//   const isMd = useMediaQuery(theme.breakpoints.down("md"));
-//   const isLg = useMediaQuery(theme.breakpoints.down("lg"));
-//   const isXl = useMediaQuery(theme.breakpoints.down("xl"));
-
-//   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-//   useEffect(() => {
-//     const handleResize = () => {
-//       setWindowWidth(window.innerWidth);
-//     };
-
-//     window.addEventListener("resize", handleResize);
-
-//     return () => {
-//       window.removeEventListener("resize", handleResize);
-//     };
-//   }, []);
-
-//   // Şu anda hangi breakpoint'in aktif olduğunu kontrol etmek için
-//   let currentBreakpoint = "xl";
-
-//   if (isXs) {
-//     currentBreakpoint = "xs";
-//   } else if (isSm) {
-//     currentBreakpoint = "sm";
-//   } else if (isMd) {
-//     currentBreakpoint = "md";
-//   } else if (isLg) {
-//     currentBreakpoint = "lg";
-//   }
-
-//   return (
-//     <div>
-//       <p>Şu anda kullanılan breakpoint: {currentBreakpoint}</p>
-//       <p>Pencerenin genişliği: {windowWidth}</p>
-//     </div>
-//   );
-// };
