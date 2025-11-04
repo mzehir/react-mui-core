@@ -324,3 +324,7 @@ cp .env.example .env
 ```bash
 npm run start
 ```
+
+**[Demo page of the repository](https://react-mui-core.vercel.app/)**
+
+![image](https://github.com/user-attachments/assets/85148839-85ff-4db3-80e0-e10b72486194)
